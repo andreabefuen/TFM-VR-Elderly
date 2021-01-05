@@ -25,9 +25,13 @@ public class HandPresence : MonoBehaviour
     void TryInitialize()
     {
         List<InputDevice> devices = new List<InputDevice>();
-        InputDeviceCharacteristics rightControllerCharacter = InputDeviceCharacteristics.Right | InputDeviceCharacteristics.Controller;
-        //InputDevices.GetDevices(devices);
-        InputDevices.GetDevicesWithCharacteristics(rightControllerCharacter, devices);
+        //InputDeviceCharacteristics rightControllerCharacter = InputDeviceCharacteristics.Right | InputDeviceCharacteristics.Controller;
+        //InputDeviceCharacteristics leftControllerCharacter = InputDeviceCharacteristics.Left | InputDeviceCharacteristics.Controller;
+        ////InputDevices.GetDevices(devices);
+        //InputDevices.GetDevicesWithCharacteristics(rightControllerCharacter, devices);
+        //InputDevices.GetDevicesWithCharacteristics(leftControllerCharacter, devices);
+
+        InputDevices.GetDevicesWithCharacteristics(controllerCharacteristics, devices);
 
         foreach (var item in devices)
         {
@@ -45,9 +49,10 @@ public class HandPresence : MonoBehaviour
                 spawnedController = Instantiate(controllerPrefabs[0], transform);
             }
 
+            spawnedHandModel = Instantiate(handModelPrefab, transform);
+            handAnimator = spawnedHandModel.GetComponent<Animator>();
         }
-        spawnedHandModel = Instantiate(handModelPrefab, transform);
-        handAnimator = spawnedHandModel.GetComponent<Animator>();
+      
     }
 
     void UpdateAnimation()
