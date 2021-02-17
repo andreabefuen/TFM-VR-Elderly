@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2844037020730523863}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 2844037021201341426}
   - component: {fileID: 2844037021201341428}
   - component: {fileID: 2844037021201341427}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Axe Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -251,7 +251,7 @@ PrefabInstance:
     - target: {fileID: -626959905284301035, guid: 84d20417ee1b55e48b048bb735b325f6,
         type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 84d20417ee1b55e48b048bb735b325f6,
         type: 3}
@@ -261,8 +261,13 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 84d20417ee1b55e48b048bb735b325f6,
         type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 7694370534035301131, guid: 84d20417ee1b55e48b048bb735b325f6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1188daec4e5cd3842953b88d1b3bf81d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84d20417ee1b55e48b048bb735b325f6, type: 3}
 --- !u!4 &2374159957608776410 stripped

@@ -11231,6 +11231,8 @@ MonoBehaviour:
   rightTeleportRay: {fileID: 1126335931}
   teleportActivationButton: 2
   activationThreshold: 0.1
+  leftInteractorRay: {fileID: 0}
+  rightInteractorRay: {fileID: 0}
 --- !u!143 &1934449034
 CharacterController:
   m_ObjectHideFlags: 0
@@ -11332,3 +11334,5 @@ MonoBehaviour:
   rightTeleportRay: {fileID: 0}
   teleportActivationButton: 2
   activationThreshold: 0.1
+  leftInteractorRay: {fileID: 0}
+  rightInteractorRay: {fileID: 0}
