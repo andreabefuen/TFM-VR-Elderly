@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class TouchableElement : MonoBehaviour
 {
@@ -20,11 +21,18 @@ public class TouchableElement : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
             GivingLove(LovePerPet);
             Debug.Log("PET");
         }
+
+        //if (other.GetComponent<XRDirectInteractor>() != null)
+        //{
+        //    GivingLove(LovePerPet);
+        //    Debug.Log("PET");
+        //}
+
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -34,5 +42,7 @@ public class TouchableElement : MonoBehaviour
             GivingLove(LovePerPet);
             Debug.Log("PET");
         }
+        Debug.Log("PET");
+
     }
 }

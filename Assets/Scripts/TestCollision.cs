@@ -5,22 +5,24 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class TestCollision : MonoBehaviour
 {
-
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.GetComponent<XRDirectInteractor>() != null)
         {
             Debug.Log("Triggered collision with " + collision.gameObject.name);
         }
+        Debug.Log("Triggered collision with " + collision.gameObject.name);
 
         Debug.Log("SSAHOOSFJG");
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.GetComponent<XRDirectInteractor>() != null)
+        if(other.gameObject.GetComponent<XRDirectInteractor>() != null)
         {
             Debug.Log("Triggered collision with " + other.name);
         }
+        Debug.Log("Triggered collision with " + other.name);
+
         Debug.Log("SSAHOOSSGSFRGGFFJG");
 
     }
