@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14fcd214384d2af4cac694d5430646e1, type: 3}
+  m_Name: SpongeTool
+  m_EditorClassIdentifier: 
+  toolName: Sponge
+  toolDescription: This is a sponge for clean the dog
+  toolPrefab: {fileID: 0}
+  onGrabTool: {fileID: 11400000, guid: fbf2b972d081cc94c9407f2332f719c2, type: 2}
+  onReleaseTool: {fileID: 11400000, guid: f7aa2e6695b974e43ad267724a4e7de6, type: 2}
