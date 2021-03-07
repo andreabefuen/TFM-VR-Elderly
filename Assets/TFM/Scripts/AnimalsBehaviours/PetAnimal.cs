@@ -1,9 +1,10 @@
-﻿using System.Collections;
+﻿using Assets.TFM.Scripts.Utils;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class TouchableElement : MonoBehaviour
+public class PetAnimal : CollisionBehaviour
 {
     public float Love = 0;
     public float MaxLove = 100;
@@ -19,30 +20,22 @@ public class TouchableElement : MonoBehaviour
         var animalBehaviour = GetComponent<AnimalBehaviour>();
         if (animalBehaviour) animalBehaviour.BePetted();
     }
-    private void OnTriggerEnter(Collider other)
+
+    public override void OnCollisionEnter(Collision collider)
+    {
+        if (collider.gameObject.CompareTag("Player"))
+        {
+            GivingLove(LovePerPet);
+            Debug.Log("PET");
+        }
+    }
+
+    public override void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             GivingLove(LovePerPet);
             Debug.Log("PET");
         }
-
-        //if (other.GetComponent<XRDirectInteractor>() != null)
-        //{
-        //    GivingLove(LovePerPet);
-        //    Debug.Log("PET");
-        //}
-
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            GivingLove(LovePerPet);
-            Debug.Log("PET");
-        }
-        Debug.Log("PET");
-
     }
 }
