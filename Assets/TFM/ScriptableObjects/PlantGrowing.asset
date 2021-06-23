@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 136bd69c0edd803458396fd86b2ef7d2, type: 3}
   m_Name: PlantGrowing
   m_EditorClassIdentifier: 
-  GrowingTime: 7.27
+  GrowingTime: 2
   MovementScale: 0.02
   MoveInsteadOfScale: 1
   GrowingParticle: {fileID: 0}

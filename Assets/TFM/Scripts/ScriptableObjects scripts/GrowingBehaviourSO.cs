@@ -5,4 +5,6 @@ using UnityEngine;
 public abstract class GrowingBehaviourSO : ScriptableObject
 {
     public abstract IEnumerator StartGrowing(MonoBehaviour obj);
+
+    public abstract IEnumerator StartGrowingStage(MonoBehaviour obj, int stage);
 }
