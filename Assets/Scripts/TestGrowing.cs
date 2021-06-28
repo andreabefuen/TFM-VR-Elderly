@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TestGrowing : MonoBehaviour
 {
-    public PlantGrowingBehaviour plantGrowing;
+    public PlantGrowingBehaviourSO plantGrowing;
     private void Awake()
     {
         if (plantGrowing) StartCoroutine(plantGrowing.StartGrowing(this));

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Growing Behaviour/Plant growing behaviour")]
-public class PlantGrowingBehaviour : GrowingBehaviourSO
+public class PlantGrowingBehaviourSO : GrowingBehaviourSO
 {
     public float GrowingTime = 1f;
     public float MovementScale = 0.2f;

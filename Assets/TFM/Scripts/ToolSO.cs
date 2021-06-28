@@ -22,13 +22,13 @@ public class ToolSO :  ScriptableObject, ITool
 
     public void GrabbingTool()
     {
-        Debug.LogError("Grabbing sponge");
+        Debug.LogError("Grabbing " + toolName);
         onGrabTool?.Raise();
     }
 
     public void ReleaseTool()
     {
-        Debug.LogError("Release sponge");
+        Debug.LogError("Release " + toolName);
         onReleaseTool?.Raise();
     }
 

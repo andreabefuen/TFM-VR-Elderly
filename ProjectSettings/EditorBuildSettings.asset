@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/TFM/Scenes/TestScene_GrowingPlants.unity
     guid: a1d299c42e3f3d64185bc969006fd42c
+  - enabled: 1
+    path: Assets/TFM/Scenes/MainScene.unity
+    guid: 5968e6919b98e0142bae42a34d4d7517
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 76007aa7dc2a0f84bb4949211e26a714,
       type: 2}
