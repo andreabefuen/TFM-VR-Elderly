@@ -4933,7 +4933,7 @@ MonoBehaviour:
   m_HapticHoverExitDuration: 0
   m_LineType: 1
   m_MaxRaycastDistance: 30
-  m_ReferenceFrame: {fileID: 0}
+  m_ReferenceFrame: {fileID: 8661728536964966284}
   m_Velocity: 8
   m_Acceleration: 9.8
   m_AdditionalFlightTime: 0.5
@@ -5103,7 +5103,7 @@ MonoBehaviour:
   m_ValidColorGradient:
     serializedVersion: 2
     key0: {r: 1, g: 1, b: 1, a: 0}
-    key1: {r: 0.7607844, g: 0.2784314, b: 0.7019608, a: 1}
+    key1: {r: 0, g: 0.69438887, b: 1, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 1}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
@@ -5284,7 +5284,7 @@ MonoBehaviour:
   m_HapticHoverExitDuration: 0
   m_LineType: 1
   m_MaxRaycastDistance: 30
-  m_ReferenceFrame: {fileID: 0}
+  m_ReferenceFrame: {fileID: 8661728536964966284}
   m_Velocity: 8
   m_Acceleration: 9.8
   m_AdditionalFlightTime: 0.5
@@ -5326,7 +5326,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 75f71251213631d469dfa8825fce2109, type: 2}
+  - {fileID: 2100000, guid: 7474e2d2ae2d9ee4ebe514f714dbaff9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5658,7 +5658,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  m_SelectActionTrigger: 0
+  m_SelectActionTrigger: 1
   m_HideControllerOnSelect: 0
   m_PlayAudioClipOnSelectEntered: 0
   m_AudioClipForOnSelectEntered: {fileID: 0}
@@ -5724,7 +5724,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 7474e2d2ae2d9ee4ebe514f714dbaff9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10760,7 +10760,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10950,7 +10949,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  m_SelectActionTrigger: 0
+  m_SelectActionTrigger: 1
   m_HideControllerOnSelect: 0
   m_PlayAudioClipOnSelectEntered: 0
   m_AudioClipForOnSelectEntered: {fileID: 0}
@@ -11016,7 +11015,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 7474e2d2ae2d9ee4ebe514f714dbaff9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11302,7 +11301,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2049444118
 Transform:
   m_ObjectHideFlags: 0
@@ -11385,7 +11384,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6630624364629010478
 Transform:
   m_ObjectHideFlags: 0
@@ -11996,11 +11995,6 @@ GameObject:
   - component: {fileID: 1934449032}
   - component: {fileID: 1934449033}
   - component: {fileID: 1934449034}
-  - component: {fileID: 8759294039544421313}
-  - component: {fileID: 2181931421305977396}
-  - component: {fileID: 4081463840230306490}
-  - component: {fileID: 6365941379165825489}
-  - component: {fileID: 6679010922782078594}
   m_Layer: 10
   m_Name: VR Rig
   m_TagString: Untagged
@@ -12066,7 +12060,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03a5df2202a8b96488c744be3bd0c33e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Timeout: 10
+  m_Timeout: 0.1
   m_XRRig: {fileID: 0}
 --- !u!114 &1934449031
 MonoBehaviour:
@@ -12123,9 +12117,9 @@ MonoBehaviour:
   leftTeleportRay: {fileID: 601700728}
   rightTeleportRay: {fileID: 1126335931}
   teleportActivationButton: 2
-  activationThreshold: 0.1
-  leftInteractorRay: {fileID: 0}
-  rightInteractorRay: {fileID: 0}
+  activationThreshold: 0.01
+  leftInteractorRay: {fileID: 1652073288}
+  rightInteractorRay: {fileID: 1251245340}
 --- !u!143 &1934449034
 CharacterController:
   m_ObjectHideFlags: 0
@@ -12144,91 +12138,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &8759294039544421313
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8661728536964966285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01f69dc1cb084aa42b2f2f8cd87bc770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_System: {fileID: 0}
---- !u!114 &2181931421305977396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8661728536964966285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03a5df2202a8b96488c744be3bd0c33e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Timeout: 10
-  m_XRRig: {fileID: 0}
---- !u!114 &4081463840230306490
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8661728536964966285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc4f2c0214c9b494fa7eb5b8b2c02885, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_System: {fileID: 0}
-  m_TurnAmount: 45
-  m_DebounceTime: 0.2
-  m_EnableTurnLeftRight: 1
-  m_EnableTurnAround: 1
-  m_TurnUsage: 0
-  m_Controllers:
-  - {fileID: 8661728536316919683}
-  m_DeadZone: 0.75
---- !u!114 &6365941379165825489
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8661728536964966285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9808ef8c0cf2d974bb205217775aafc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1
-  inputSource: 4
-  gravity: -9.81
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 512
-  additionalHeight: 0.2
---- !u!114 &6679010922782078594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8661728536964966285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b588f65a1816c944dbbe61c29bd185bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leftTeleportRay: {fileID: 601700728}
-  rightTeleportRay: {fileID: 1126335931}
-  teleportActivationButton: 2
-  activationThreshold: 0.1
-  leftInteractorRay: {fileID: 1652073288}
-  rightInteractorRay: {fileID: 1251245340}
 --- !u!1001 &8661728536967241207
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 136bd69c0edd803458396fd86b2ef7d2, type: 3}
-  m_Name: DFDSG
+  m_Name: GrowingBehaviour
   m_EditorClassIdentifier: 
   GrowingTime: 1
-  MovementScale: 0.2
+  MovementScale: 0.17
   MoveInsteadOfScale: 1
   GrowingParticle: {fileID: 0}
-  GrowingSurroundFactor: 1.3
+  GrowingSurroundFactor: 1.12
   GrowingAudio: {fileID: 0}

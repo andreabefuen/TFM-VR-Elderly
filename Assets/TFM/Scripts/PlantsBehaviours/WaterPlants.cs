@@ -5,12 +5,22 @@ using UnityEngine;
 
 public class WaterPlants : CollisionBehaviour
 {
-    public GrowingBehaviour plantToGrow;
+    public GrowingBehaviour[] plantToGrow;
+
+    private void Awake()
+    {
+        plantToGrow = this.GetComponentsInChildren<GrowingBehaviour>();
+    }
     public override void OnCollisionEnter(Collision collider)
     {
         if (collider.gameObject.CompareTag("Watering Can"))
         {
-            
+            foreach (var item in plantToGrow)
+            {
+                item.StartGrowing();
+
+            }
+            Debug.Log("GROW");
         }
     }
 
@@ -18,7 +28,11 @@ public class WaterPlants : CollisionBehaviour
     {
         if (other.CompareTag("Watering Can"))
         {
-            plantToGrow.StartGrowing();
+            foreach (var item in plantToGrow)
+            {
+               item.StartGrowing();
+
+            }
             Debug.Log("GROW");
         }
     }
