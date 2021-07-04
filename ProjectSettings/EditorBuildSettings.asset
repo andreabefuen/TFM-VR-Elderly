@@ -5,9 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/TFM/Scenes/TestScene_GrowingPlants.unity
-    guid: a1d299c42e3f3d64185bc969006fd42c
+  - enabled: 1
+    path: Assets/TFM/Scenes/MainMenuScene.unity
+    guid: 096d03e925fcc14449fcdd63ba655ede
   - enabled: 1
     path: Assets/TFM/Scenes/MainScene.unity
     guid: 5968e6919b98e0142bae42a34d4d7517
