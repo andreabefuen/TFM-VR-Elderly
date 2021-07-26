@@ -33,5 +33,7 @@ public class AddManipulationCopyOnClick : MonoBehaviour
 
         Destroy(copy.GetComponent<Interactable>());
         Destroy(copy.GetComponent<AddManipulationCopyOnClick>());
+
+        EditModeManager.Instance.furnitureGameObjects.Add(copy);
     }
 }
