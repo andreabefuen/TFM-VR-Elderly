@@ -10,8 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a88cb60b9f7da404ebce96b57b5b88d0, type: 3}
-  m_Name: DogTouch
+  m_Name: SDFDSg
   m_EditorClassIdentifier: 
   TouchTime: 1
   LoveParticle: {fileID: 0}
   AnimalSound: {fileID: 11400000, guid: 692ad5aaa46c15a4b82bf5c04fd2853a, type: 2}
+  FeedTime: 1
+  FeedParticle: {fileID: 0}
+  FeedSound: {fileID: 0}
+  animationPetStringTrigger: test_animation
+  animationFeedStringTrigger: eat_animation
+  onPetAnimal: {fileID: 11400000, guid: c9ba8070307ccc543a194f7146158862, type: 2}
+  onFeedAnimal: {fileID: 11400000, guid: 49909dc7aa88b5c4fbede5b1fd20ccf5, type: 2}

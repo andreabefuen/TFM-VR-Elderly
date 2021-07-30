@@ -6,14 +6,21 @@ using UnityEngine;
 public class AnimalBehaviour : MonoBehaviour
 {
 
-    public StringEvent onPetAnimal;
-    public TouchBehaviourSO TouchBehaviour;
 
-    public string animationStringTrigger;
+    public TouchAnimalBehaviourSO AnimalBehaviourSO;
+
+
 
     public void BePetted()
     {
-        if (TouchBehaviour) StartCoroutine(TouchBehaviour.TouchCoroutine(this));
-        onPetAnimal?.Raise(animationStringTrigger);
+        if (AnimalBehaviourSO) StartCoroutine(AnimalBehaviourSO.TouchCoroutine(this));
+
+    }
+
+    public void BeFeeded()
+    {
+        if (AnimalBehaviourSO) StartCoroutine(AnimalBehaviourSO.FeedCoroutine(this));
+
+
     }
 }

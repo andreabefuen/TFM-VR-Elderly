@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d70480308501f543a5df74c5773e433, type: 3}
-  m_Name: AudioSimpleEventExample
+  m_Name: DogWofAudioSimpleEventExample
   m_EditorClassIdentifier: 
   clips:
   - {fileID: 8300000, guid: fba7fd3cb22d0eb49a45a4a244cbaaf5, type: 3}
