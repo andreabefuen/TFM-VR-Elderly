@@ -1452,7 +1452,7 @@ GameObject:
   - component: {fileID: 1222444279}
   - component: {fileID: 1222444278}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: FoodPlaceholder
   m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

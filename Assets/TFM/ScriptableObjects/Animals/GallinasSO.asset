@@ -18,4 +18,4 @@ MonoBehaviour:
     type: 3}
   animalCost: 10
   foodPerDay: 2
-  animalDescription: 
+  animalDescription: "Estos animales ponen un huevo cada d\xEDa"
