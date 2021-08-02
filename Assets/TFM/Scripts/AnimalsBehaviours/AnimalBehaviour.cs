@@ -5,9 +5,11 @@ using UnityEngine;
 
 public class AnimalBehaviour : MonoBehaviour
 {
+    public AnimalInformationSO animal;
 
+    public Transform playerTransform;
 
-    public TouchAnimalBehaviourSO AnimalBehaviourSO;
+    public AnimalBehaviourSO AnimalBehaviourSO;
 
 
 
@@ -17,10 +19,20 @@ public class AnimalBehaviour : MonoBehaviour
 
     }
 
-    public void BeFeeded()
+    public void BeFeeded(int value)
     {
-        if (AnimalBehaviourSO) StartCoroutine(AnimalBehaviourSO.FeedCoroutine(this));
+        if (AnimalBehaviourSO) StartCoroutine(AnimalBehaviourSO.FeedCoroutine(this, value, animal));
 
 
+    }
+
+    public void WalkTo(Transform goal)
+    {
+        if (AnimalBehaviourSO) StartCoroutine(AnimalBehaviourSO.MovementCoroutine(this, goal));
+    }
+
+    public void Walk()
+    {
+        if (AnimalBehaviourSO) StartCoroutine(AnimalBehaviourSO.MovementCoroutine(this, playerTransform));
     }
 }

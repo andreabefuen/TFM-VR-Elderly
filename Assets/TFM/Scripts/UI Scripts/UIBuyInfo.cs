@@ -25,9 +25,9 @@ public class UIBuyInfo : MonoBehaviour
 
     public void GenerateBuyInfo(AnimalInformationSO animalInfo)
     {
-        icon.sprite = animalInfo.animalSprite;
+        icon.sprite = animalInfo.GetAnimalSprite();
         icon.preserveAspect = true;
-        textName.text = animalInfo.animalName;
+        textName.text = animalInfo.GetAnimalName();
 
         currentAnimalInfo = animalInfo;
     }

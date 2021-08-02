@@ -18,7 +18,13 @@ MonoBehaviour:
   FeedTime: 1
   FeedParticle: {fileID: 0}
   FeedSound: {fileID: 0}
+  Speed: 2
+  maxDistance: 4
+  minDistance: 3
   animationPetStringTrigger: test_animation
   animationFeedStringTrigger: eat_animation
+  animationMovementStringTrigger: walk_animation
+  animationStopStringTrigger: idle_animation
   onPetAnimal: {fileID: 11400000, guid: c9ba8070307ccc543a194f7146158862, type: 2}
   onFeedAnimal: {fileID: 11400000, guid: 49909dc7aa88b5c4fbede5b1fd20ccf5, type: 2}
+  onMoveAnimal: {fileID: 11400000, guid: 10539fafa201a8c4ba61a939698f0363, type: 2}

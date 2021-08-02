@@ -19,3 +19,4 @@ MonoBehaviour:
   animalCost: 10
   foodPerDay: 2
   animalDescription: 
+  currentFeed: 0

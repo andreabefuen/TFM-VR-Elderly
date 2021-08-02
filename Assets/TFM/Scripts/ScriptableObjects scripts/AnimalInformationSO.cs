@@ -5,15 +5,45 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Animals/New info animal")]
 public class AnimalInformationSO : ScriptableObject
 {
-    public string animalName;
+    [SerializeField] private string animalName;
 
-    public GameObject animalPrefab;
+    [SerializeField] private GameObject animalPrefab;
 
-    public Sprite animalSprite;
+    [SerializeField] private Sprite animalSprite;
 
-    public int animalCost;
+    [SerializeField] private int animalCost;
 
-    public int foodPerDay;
+    [SerializeField] private int foodPerDay;
 
-    public string animalDescription;
+    [SerializeField] private string animalDescription;
+    
+    [Range(0,10)]
+    [SerializeField] private int currentFeed = 5;
+
+
+
+    public void FeedAnimal(int value)
+    {
+        currentFeed += value;
+        if(currentFeed > 10)
+        {
+            currentFeed = 10;
+            Debug.LogError("Maximum value of feed");
+        }
+    }
+
+    public int GetCurrentValueFeed()
+    {
+        return currentFeed;
+    }
+
+    public Sprite GetAnimalSprite()
+    {
+        return animalSprite;
+    }
+
+    public string GetAnimalName()
+    {
+        return animalName;
+    }
 }
