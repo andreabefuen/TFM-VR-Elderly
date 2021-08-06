@@ -19,5 +19,7 @@ MonoBehaviour:
   animalCost: 10
   foodPerDay: 2
   animalDescription: 
+  maxAnimals: 0
+  currentCountAnimals: 0
   currentFeed: 0
   currentLove: 10

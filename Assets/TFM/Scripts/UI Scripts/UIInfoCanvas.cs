@@ -6,6 +6,5 @@ public class UIInfoCanvas : MonoBehaviour
 {
     private void Awake()
     {
-        UIInfoCanvas[] allInfoCanvas = this.gameObject.GetComponentsInChildren<UIInfoCanvas>();
     }
 }

@@ -10,6 +10,7 @@ public class MoveAnimal : MonoBehaviour
     {
         animalBehaviour = GetComponent<AnimalBehaviour>();
         StartCoroutine(MoveIfHungry());
+        StartCoroutine(MoveRandomly());
     }
 
     // Update is called once per frame
@@ -23,13 +24,30 @@ public class MoveAnimal : MonoBehaviour
         if (animalBehaviour) animalBehaviour.Walk();
 
     }
+    void WalkTo(Vector3 goal)
+    {
+        if (animalBehaviour) animalBehaviour.WalkTo(goal);
+    }
 
     IEnumerator MoveIfHungry()
     {
-        Debug.Log("Wait until hungry");
-        yield return new WaitUntil(() => animalBehaviour.animal.GetCurrentValueFeed() == 0);
-        Debug.Log("hungry!");
-        Walk();
+        while (animalBehaviour.animal.GetCurrentValueFeed() == 0)
+        {
+            Debug.Log("hungry!");
+            Walk();
+            yield return null;
+        }
+    }
 
+    IEnumerator MoveRandomly()
+    {
+        while (true)
+        {
+            Vector3 aux = new Vector3(Random.insideUnitCircle.x * 10, this.gameObject.transform.position.y, Random.insideUnitCircle.y * 10);
+            yield return null;
+            WalkTo(aux);
+            yield return new WaitForSeconds(10f);
+        }
+       
     }
 }

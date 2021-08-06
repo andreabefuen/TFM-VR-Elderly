@@ -70,10 +70,36 @@ public class DefaultAnimalBehaviourSO : AnimalBehaviourSO
 
     }
 
-    public override IEnumerator MovementCoroutine(MonoBehaviour obj, Transform goalTransform)
+    public override IEnumerator MovementCoroutine(MonoBehaviour obj, Vector3 goalTransform)
     {
         var transform = obj.transform;
         transform.LookAt(goalTransform);
+        onMoveAnimal?.Raise(animationMovementStringTrigger);
+
+
+        while (Vector3.Distance(transform.position, goalTransform) >= minDistance)
+        {
+            transform.LookAt(goalTransform);
+            transform.position += transform.forward * Speed * Time.deltaTime;
+
+            if (Vector3.Distance(transform.position, goalTransform) <= maxDistance)
+            {
+                onMoveAnimal?.Raise(animationStopStringTrigger);
+                break;
+
+            }
+            yield return null;
+
+        }
+
+
+        
+    }
+
+    public override IEnumerator MovementCoroutine(MonoBehaviour obj, Transform goalTransform)
+    {
+        var transform = obj.transform;
+        transform.LookAt(goalTransform.position);
         onMoveAnimal?.Raise(animationMovementStringTrigger);
 
 
@@ -92,8 +118,6 @@ public class DefaultAnimalBehaviourSO : AnimalBehaviourSO
 
         }
 
-
-        
     }
 
     public override IEnumerator TouchCoroutine(MonoBehaviour obj, int value, AnimalInformationSO animal)

@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7b1877fbcee4384391bb93c4ef39976, type: 3}
-  m_Name: Pumpkin
+  m_Name: Berenjena
   m_EditorClassIdentifier: 
-  itemName: Pumpkin
+  itemName: Berenjena
   description: 
-  icon: {fileID: 5691434431319492277, guid: 5cf98ed5b8b44054c96ff63ae91eb566, type: 3}
-  value: 64000000c80000002c010000
-  prefab: {fileID: 743781108092328808, guid: c7865e973baefa44fbaed0821ae8ae44, type: 3}
+  icon: {fileID: 8776440462356151009, guid: 5cf98ed5b8b44054c96ff63ae91eb566, type: 3}
+  value: c800000090010000f4010000
+  prefab: {fileID: 0}

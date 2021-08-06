@@ -26,7 +26,7 @@ public class AnimalBehaviour : MonoBehaviour
 
     }
 
-    public void WalkTo(Transform goal)
+    public void WalkTo(Vector3 goal)
     {
         if (AnimalBehaviourSO) StartCoroutine(AnimalBehaviourSO.MovementCoroutine(this, goal));
     }
