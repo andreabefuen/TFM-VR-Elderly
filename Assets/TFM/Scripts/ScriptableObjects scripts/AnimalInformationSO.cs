@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Animals/New info animal")]
 public class AnimalInformationSO : ScriptableObject
 {
+
     [SerializeField] private string animalName;
 
     [SerializeField] private GameObject animalPrefab;
@@ -20,7 +21,15 @@ public class AnimalInformationSO : ScriptableObject
     [Range(0,10)]
     [SerializeField] private int currentFeed = 5;
 
+    [Range(0, 10)]
+    [SerializeField] private int currentLove = 0;
 
+    // DELEGATES
+    public delegate void OnFeedValueChange();
+    public OnFeedValueChange onFeedValueChange;
+
+    public delegate void OnPetValueChange();
+    public OnPetValueChange onPetValueChange;
 
     public void FeedAnimal(int value)
     {
@@ -30,11 +39,27 @@ public class AnimalInformationSO : ScriptableObject
             currentFeed = 10;
             Debug.LogError("Maximum value of feed");
         }
+        onFeedValueChange?.Invoke();
+    }
+
+    public void PetAnimal(int value)
+    {
+        currentLove += value;
+        if(currentLove> 10)
+        {
+            currentLove = 10;
+        }
+        onPetValueChange?.Invoke();
     }
 
     public int GetCurrentValueFeed()
     {
         return currentFeed;
+    }
+
+    public int GetCurrentLoveValue()
+    {
+        return currentLove;
     }
 
     public Sprite GetAnimalSprite()

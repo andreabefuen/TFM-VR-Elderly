@@ -6,19 +6,14 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class PetAnimal : CollisionBehaviour
 {
-    public float Love = 0;
-    public float MaxLove = 100;
-    public float LovePerPet = 10;
+    public int LovePerPet = 1;
 
 
-    public void GivingLove(float love)
+    public void GivingLove(int love)
     {
-        Love += love;
-
-        if(Love > MaxLove) { Love = MaxLove; }
 
         var animalBehaviour = GetComponent<AnimalBehaviour>();
-        if (animalBehaviour) animalBehaviour.BePetted();
+        if (animalBehaviour) animalBehaviour.BePetted(love);
     }
 
     public override void OnCollisionEnter(Collision collider)

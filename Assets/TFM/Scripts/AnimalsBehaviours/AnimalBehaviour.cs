@@ -13,9 +13,9 @@ public class AnimalBehaviour : MonoBehaviour
 
 
 
-    public void BePetted()
+    public void BePetted(int value)
     {
-        if (AnimalBehaviourSO) StartCoroutine(AnimalBehaviourSO.TouchCoroutine(this));
+        if (AnimalBehaviourSO) StartCoroutine(AnimalBehaviourSO.TouchCoroutine(this, value, animal));
 
     }
 

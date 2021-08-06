@@ -67,6 +67,7 @@ public class DefaultAnimalBehaviourSO : AnimalBehaviourSO
         animal.FeedAnimal(value);
 
         yield return null;
+
     }
 
     public override IEnumerator MovementCoroutine(MonoBehaviour obj, Transform goalTransform)
@@ -95,7 +96,7 @@ public class DefaultAnimalBehaviourSO : AnimalBehaviourSO
         
     }
 
-    public override IEnumerator TouchCoroutine(MonoBehaviour obj)
+    public override IEnumerator TouchCoroutine(MonoBehaviour obj, int value, AnimalInformationSO animal)
     {
         var transform = obj.transform;
         Vector3 basePosition = transform.position;
@@ -127,7 +128,7 @@ public class DefaultAnimalBehaviourSO : AnimalBehaviourSO
         onPetAnimal?.Raise(animationPetStringTrigger);
 
         yield return null;
+        animal.PetAnimal(value);
     }
 
-  
 }
