@@ -15,7 +15,7 @@ public class UIAnimalInfoSlot : MonoBehaviour
 
     private void Start()
     {
-        AddListeners();
+       // AddListeners();
     }
 
     private void OnDisable()
@@ -41,14 +41,22 @@ public class UIAnimalInfoSlot : MonoBehaviour
     {
         loveCountText.text = animalInformationSO.GetCurrentLoveValue().ToString();
     }
-    public UIAnimalInfoSlot(AnimalInformationSO animalInfoSO)
+    void ChangeCountValue()
     {
+        countText.text = animalInformationSO.GetCurrentCountAnimals().ToString();
+    }
+    public void ChangUIAnimalInfoSlot(AnimalInformationSO animalInfoSO)
+    {
+        if (animalInfoSO == null) return;
         animalInformationSO = animalInfoSO;
 
         animalIcon.sprite = animalInfoSO.GetAnimalSprite();
-        animalNameText.text = animalInfoSO.GetAnimalName();
+        animalNameText.text = animalInfoSO?.GetAnimalName();
 
-        //loveCountText.text = animalInfoSO
+        countText.text = animalInfoSO.GetCurrentCountAnimals().ToString();
+
+        loveCountText.text = animalInfoSO.GetCurrentLoveValue().ToString();
         foodCountText.text = animalInfoSO.GetCurrentValueFeed().ToString();
+        AddListeners();
     }
 }

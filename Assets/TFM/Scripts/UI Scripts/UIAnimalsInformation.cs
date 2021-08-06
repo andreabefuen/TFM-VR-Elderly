@@ -10,11 +10,13 @@ public class UIAnimalsInformation : MonoBehaviour
     void Start()
     {
         AnimalInformationSO[] allAnimals = Resources.FindObjectsOfTypeAll<AnimalInformationSO>();
-
+        Debug.Log("FOUND: " + allAnimals.Length);
         foreach (var item in allAnimals)
         {
             GameObject aux = Instantiate(animalInformationSlotPrefab, contentParent);
-            UIAnimalInfoSlot animalInfo = aux.GetComponent<UIAnimalInfoSlot>(); 
+            UIAnimalInfoSlot animalInfo = aux.GetComponent<UIAnimalInfoSlot>();
+            animalInfo.ChangUIAnimalInfoSlot(item);
+
         }
 
     }

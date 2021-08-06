@@ -17,6 +17,10 @@ public class AnimalInformationSO : ScriptableObject
     [SerializeField] private int foodPerDay;
 
     [SerializeField] private string animalDescription;
+
+    [SerializeField] private int maxAnimals;
+
+    [SerializeField] private int currentCountAnimals = 0;
     
     [Range(0,10)]
     [SerializeField] private int currentFeed = 5;
@@ -64,11 +68,22 @@ public class AnimalInformationSO : ScriptableObject
 
     public Sprite GetAnimalSprite()
     {
-        return animalSprite;
+
+            return animalSprite;
     }
 
     public string GetAnimalName()
     {
         return animalName;
+    }
+
+    public int GetCurrentCountAnimals()
+    {
+        return currentCountAnimals;
+    }
+
+    public int GetCostAnimal()
+    {
+        return currentCountAnimals * animalCost;
     }
 }
