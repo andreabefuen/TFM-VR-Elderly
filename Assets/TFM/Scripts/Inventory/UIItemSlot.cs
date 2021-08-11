@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class UIItemSlot : MonoBehaviour
 {
 
-    [SerializeField] private Button itemButton = null;
+    [SerializeField] private Button giveItemButton = null;
     [SerializeField] private Button removeButton = null;
     [SerializeField] private TextMeshProUGUI nameText = null;
     [SerializeField] private TextMeshProUGUI countText = null;
@@ -16,6 +16,9 @@ public class UIItemSlot : MonoBehaviour
 
     public delegate void OnClickRemove();
     public OnClickRemove onClickRemove;
+
+    public delegate void OnClickGive();
+    public OnClickGive onClickGive;
 
 
     // Start is called before the first frame update
@@ -36,8 +39,8 @@ public class UIItemSlot : MonoBehaviour
 
         if(buttonAction != null)
         {
-            itemButton.onClick.RemoveAllListeners();
-            itemButton.onClick.AddListener(buttonAction);
+            giveItemButton.onClick.RemoveAllListeners();
+            giveItemButton.onClick.AddListener(buttonAction);
         }
     }
 }

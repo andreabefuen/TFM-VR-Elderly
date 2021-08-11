@@ -12,12 +12,19 @@ public class UITabletController : MonoBehaviour
     {
         allInfoCanvas = this.gameObject.GetComponentsInChildren<UIInfoCanvas>();
         maxCount = allInfoCanvas.Length;
+        Debug.Log("Count: " + maxCount);
+
+        foreach (var item in allInfoCanvas)
+        {
+            item.gameObject.SetActive(false);
+        }
+        allInfoCanvas[count].gameObject.SetActive(true);
 
     }
 
     public void NextCanvas()
     {
-        if (count >= maxCount)
+        if (count > maxCount)
         {
             count = 0;
 

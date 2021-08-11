@@ -5,6 +5,28 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
+
+    public static Inventory _instance = null;
+
+    public static Inventory Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                _instance = GameObject.FindObjectOfType<Inventory>();
+
+                if (_instance == null)
+                {
+                    GameObject container = new GameObject("Inventory");
+                    _instance = container.AddComponent<Inventory>();
+                }
+            }
+
+            return _instance;
+        }
+    }
+
     private Dictionary<ItemSO, int> inventory = new Dictionary<ItemSO, int>();
 
     private int maxItemSlot = 99;
@@ -60,5 +82,21 @@ public class Inventory : MonoBehaviour
         Debug.Log("DROP");
         PickupItem p = Instantiate(item.Prefab!=null ? item.Prefab.GetComponent<PickupItem>() : pickupPrefab, transform.position + transform.TransformDirection(new Vector3(0, 3f, 2f)), transform.rotation);
 
+    }
+
+    /// <summary>
+    /// Dar la cantidad count del elemento item para completar la misión indicada
+    /// </summary>
+    /// <param name="mission"></param>
+    /// <param name="item"></param>
+    /// <param name="count"></param>
+    public void GiveItem(MissionsSO mission, ItemSO item, int count)
+    {
+        if (!HasNumberOfItem(item, count))
+            return;
+
+        RemoveFromInventory(item, count);
+        Debug.Log("GIVE!");
+        Missions.Instance.RemoveFromMissions(mission, true);
     }
 }

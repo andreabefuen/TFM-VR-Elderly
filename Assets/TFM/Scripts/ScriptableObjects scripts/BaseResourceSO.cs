@@ -1,8 +1,8 @@
 ﻿using System.Collections;
-using TFM.ScriptableObjects.Inventory;
+using TFM.ScriptableObjects;
 using UnityEngine;
 
-namespace TFM.ScriptableObjects.Resources
+namespace TFM.ScriptableObjects
 {
     public enum ResourceType
     {

@@ -30,6 +30,7 @@ namespace TFM.ScriptableObjects
         public void DoItemStuff()
         {
             Debug.Log("HAZ COSAS");
+
         }
 
     }
