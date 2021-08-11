@@ -6,42 +6,45 @@ public class UITabletController : MonoBehaviour
 {
     UIInfoCanvas[] allInfoCanvas;
 
-    int count = 0;
+    int index = 0;
     int maxCount = 0;
     private void Awake()
     {
         allInfoCanvas = this.gameObject.GetComponentsInChildren<UIInfoCanvas>();
         maxCount = allInfoCanvas.Length;
-        Debug.Log("Count: " + maxCount);
+        //Debug.Log("Count: " + maxCount);
 
         foreach (var item in allInfoCanvas)
         {
             item.gameObject.SetActive(false);
         }
-        allInfoCanvas[count].gameObject.SetActive(true);
+        allInfoCanvas[index].gameObject.SetActive(true);
 
     }
 
     public void NextCanvas()
     {
-        if (count > maxCount)
+        allInfoCanvas[index].gameObject.SetActive(false);
+
+        if (index == maxCount-1)
         {
-            count = 0;
+            index = 0;
 
         }
-        allInfoCanvas[count].gameObject.SetActive(false);
-        count++;
-        allInfoCanvas[count].gameObject.SetActive(true);
+        else
+            index++;
+        allInfoCanvas[index].gameObject.SetActive(true);
     }
     public void PreviousCanvas()
     {
-        if (count < 0)
+        allInfoCanvas[index].gameObject.SetActive(false);
+        if (index == 0)
         {
-            count = maxCount -1;
+            index = maxCount-1;
 
         }
-        allInfoCanvas[count].gameObject.SetActive(false);
-        count--;
-        allInfoCanvas[count].gameObject.SetActive(true);
+        else
+            index--;
+        allInfoCanvas[index].gameObject.SetActive(true);
     }
 }
