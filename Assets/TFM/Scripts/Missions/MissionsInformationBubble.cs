@@ -29,12 +29,21 @@ public class MissionsInformationBubble : MonoBehaviour
         }
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            informationBubble.SetActive(false);
+        }
+    }
+
     private void OnAcceptMissionClicked()
     {
         Debug.Log("Mission Accepted");
         //Missions missions = FindObjectOfType<Missions>().gameObject.GetComponent<Missions>();
         Missions.Instance.AddToMissions(missionSO, false);
-        informationBubble.SetActive(false);
+        //informationBubble.SetActive(false);
+        Destroy(this.gameObject);
 
     }
 
