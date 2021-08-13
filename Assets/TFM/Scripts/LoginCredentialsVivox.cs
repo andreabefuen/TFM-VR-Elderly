@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using VivoxUnity;
 using System.ComponentModel;
+using UnityEngine.Android;
 
 public class LoginCredentialsVivox : MonoBehaviour
 {
@@ -23,6 +24,10 @@ public class LoginCredentialsVivox : MonoBehaviour
 
     private void Awake()
     {
+        if (!Permission.HasUserAuthorizedPermission(Permission.Microphone))
+        {
+            Permission.RequestUserPermission(Permission.Microphone);
+        }
         client = new Client();
         client.Uninitialize();
         client.Initialize();
