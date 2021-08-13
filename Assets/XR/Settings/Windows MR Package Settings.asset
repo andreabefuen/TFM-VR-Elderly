@@ -1,5 +1,19 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8732892415122753365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a6c5bd16b42a1542ad52d1d47746bdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UsePrimaryWindowForDisplay: 1
+  HolographicRemoting: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16,7 +30,9 @@ MonoBehaviour:
   Values:
   - {fileID: 177369747372682004}
   - {fileID: 5923089978753377307}
-  BuildValues: []
+  BuildValues:
+  - {fileID: -8732892415122753365}
+  - {fileID: 1713371688837409270}
 --- !u!114 &177369747372682004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31,6 +47,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DepthBufferFormat: 0
   UseSharedDepthBuffer: 0
+--- !u!114 &1713371688837409270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a6c5bd16b42a1542ad52d1d47746bdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UsePrimaryWindowForDisplay: 1
+  HolographicRemoting: 0
 --- !u!114 &5923089978753377307
 MonoBehaviour:
   m_ObjectHideFlags: 0
