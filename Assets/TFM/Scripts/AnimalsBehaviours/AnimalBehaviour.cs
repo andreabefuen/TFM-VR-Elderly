@@ -31,8 +31,19 @@ public class AnimalBehaviour : MonoBehaviour
         if (AnimalBehaviourSO) StartCoroutine(AnimalBehaviourSO.MovementCoroutine(this, goal));
     }
 
-    public void Walk()
+    public void WalkToPlayer()
     {
         if (AnimalBehaviourSO) StartCoroutine(AnimalBehaviourSO.MovementCoroutine(this, playerTransform));
     }
+
+    public void WalkToPlayerAI()
+    {
+        if (AnimalBehaviourSO) StartCoroutine(AnimalBehaviourSO.MovementNavmeshCoroutine(this, playerTransform));
+    }
+
+    public void WalkToAI(Vector3 goal)
+    {
+        if (AnimalBehaviourSO) StartCoroutine(AnimalBehaviourSO.MovementNavmeshCoroutine(this, goal));
+    }
+
 }
