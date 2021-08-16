@@ -34,21 +34,18 @@ public abstract class UISlotHolderMissions <T> : MonoBehaviour
     protected void UpdateMissionSlot()
     {
         int index = 0;
-        Debug.Log("pene");
 
         foreach (KeyValuePair<T, string> kvp in missionsType)
         {
-            Debug.Log("afeajgbs");
             UpdateSlotAt(index, kvp.Key, kvp.Value);
             index++;
-            Debug.Log("wwwwwww");
             
         }
 
-        for (int i = index; i < missionsSlots.Length; ++i)
-        {
-            missionsSlots[i].gameObject.SetActive(false);
-        }
+        //for (int i = index; i < missionsSlots.Length; ++i)
+        //{
+        //    missionsSlots[i].gameObject.SetActive(false);
+        //}
     }
 
     protected abstract void UpdateSlotAt(int _index, T missionType, string state);

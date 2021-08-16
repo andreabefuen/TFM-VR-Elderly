@@ -90,4 +90,9 @@ public class MoveAnimal : MonoBehaviour
             yield return new WaitForSeconds(10f);
         }
     }
+
+    IEnumerator MoveToHome()
+    {
+        yield return null;
+    }
 }

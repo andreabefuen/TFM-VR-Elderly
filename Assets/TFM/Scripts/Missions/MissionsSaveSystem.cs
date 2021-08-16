@@ -15,7 +15,6 @@ public class MissionsSaveSystem : MonoBehaviour
 
     private void Awake()
     {
-        Debug.Log("2");
         FILE_PATH = Application.persistentDataPath + "/Missions.txt";
 
         CreateMissionsDictionary();
@@ -37,12 +36,10 @@ public class MissionsSaveSystem : MonoBehaviour
 
         foreach (MissionsSO m in allMissions)
         {
-            
             int key = HashMission(m);
             if (!allMissionsDictionary.ContainsKey(key))
                 allMissionsDictionary.Add(key, m);
         }
-        Debug.Log(allMissionsDictionary.Count);
     }
 
     public void SaveMissions()

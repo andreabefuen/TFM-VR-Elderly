@@ -127,7 +127,7 @@ public class DefaultAnimalBehaviourSO : AnimalBehaviourSO
         NavMeshAgent navMesh = obj.GetComponent<NavMeshAgent>();
         navMesh.SetDestination(goalTransform.position);
 
-        if (navMesh.remainingDistance < 3)
+        if (navMesh.remainingDistance <= 3)
         {
             onMoveAnimal?.Raise(animationStopStringTrigger);
             navMesh.isStopped = true;
@@ -161,7 +161,7 @@ public class DefaultAnimalBehaviourSO : AnimalBehaviourSO
         NavMeshAgent navMesh = obj.GetComponent<NavMeshAgent>();
         navMesh.SetDestination(goal);
 
-        if (navMesh.remainingDistance < 3)
+        if (navMesh.remainingDistance <= 3)
         {
             onMoveAnimal?.Raise(animationStopStringTrigger);
             navMesh.isStopped = true;

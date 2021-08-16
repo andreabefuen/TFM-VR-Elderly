@@ -2,12 +2,15 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TFM.ScriptableObjects;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class MissionsInformationBubble : MonoBehaviour
 {
     public GameObject informationBubble;
+    public Image iconMission;
+    public TextMeshProUGUI cuantityText;
     public MissionsSO missionSO;
 
     public Button acceptButton;
@@ -18,6 +21,8 @@ public class MissionsInformationBubble : MonoBehaviour
         informationBubble.SetActive(false);
         acceptButton.onClick.AddListener(OnAcceptMissionClicked);
         cancelButton.onClick.AddListener(OnCancelMissionClicked);
+
+        InitializeMissionBubble();
 
     }
 
@@ -35,6 +40,12 @@ public class MissionsInformationBubble : MonoBehaviour
         {
             informationBubble.SetActive(false);
         }
+    }
+
+    void InitializeMissionBubble()
+    {
+        iconMission.sprite = missionSO.Icon;
+        cuantityText.text = "x" + missionSO.Cuantity;
     }
 
     private void OnAcceptMissionClicked()
