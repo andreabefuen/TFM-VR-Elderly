@@ -15,4 +15,5 @@ MonoBehaviour:
   personTalkingAudio: {fileID: 11400000, guid: 692ad5aaa46c15a4b82bf5c04fd2853a, type: 2}
   animationMovementTrigger: Walk
   animationIdleTrigger: Idle
+  animationGreetTrigger: Greet
   onMoveCharacter: {fileID: 11400000, guid: 3aa9c369545ae574685b0c5c712eb9c3, type: 2}

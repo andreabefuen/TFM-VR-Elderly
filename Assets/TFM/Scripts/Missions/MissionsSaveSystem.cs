@@ -76,7 +76,7 @@ public class MissionsSaveSystem : MonoBehaviour
                 int key = int.Parse(line.Split(SPLIT_CHAR)[0]);
                 MissionsSO mission = allMissionsDictionary[key];
                 string state = line.Split(SPLIT_CHAR)[1];
-
+                mission.MissionAccepted();
                 missions.Add(mission, state);
             }
         }

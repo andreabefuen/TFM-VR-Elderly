@@ -8,4 +8,6 @@ public abstract class PeopleBehaviourSO : ScriptableObject
 
     public abstract IEnumerator MovementCoroutine(MonoBehaviour obj, Vector3 goal);
     public abstract IEnumerator TalkCoroutine(MonoBehaviour obj);
+
+    public abstract IEnumerator WaitForMissionAcceptance(MonoBehaviour obj);
 }

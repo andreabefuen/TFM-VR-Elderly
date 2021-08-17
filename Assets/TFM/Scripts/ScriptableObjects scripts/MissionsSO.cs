@@ -16,12 +16,23 @@ namespace TFM.ScriptableObjects
         [SerializeField] private int moneyReward;
         [SerializeField] private ItemSO itemReward;
         [SerializeField] private bool isCompleted = false;
+        [SerializeField] private bool isAccepted = false;
 
         public string MissionName => missionName;
         public string Description => description;
 
         public Sprite Icon => itemNeeded?.Icon;
         public int Cuantity => cuantityNeeded;
+
+        public bool IsCompleted => isCompleted;
+        public bool IsAccepted => isAccepted;
+        
+        public void MissionAccepted() {
+            isAccepted = true;
+            
+        }
+
+            
 
         public ItemSO ItemNeeded()
         {

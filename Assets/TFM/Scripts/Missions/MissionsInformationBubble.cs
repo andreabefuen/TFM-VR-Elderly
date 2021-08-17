@@ -9,6 +9,7 @@ using UnityEngine.UI;
 public class MissionsInformationBubble : MonoBehaviour
 {
     public GameObject informationBubble;
+    public GameObject textParticlePrefab;
     public Image iconMission;
     public TextMeshProUGUI cuantityText;
     public MissionsSO missionSO;
@@ -16,11 +17,22 @@ public class MissionsInformationBubble : MonoBehaviour
     public Button acceptButton;
     public Button cancelButton;
 
+    private ParticleSystem textParticle;
+
     private void Awake()
     {
+        if (missionSO.IsAccepted)
+        {
+            Destroy(this);
+            return;
+        }
         informationBubble.SetActive(false);
+        textParticlePrefab.SetActive(true);
         acceptButton.onClick.AddListener(OnAcceptMissionClicked);
         cancelButton.onClick.AddListener(OnCancelMissionClicked);
+
+        textParticle = textParticlePrefab.GetComponent<ParticleSystem>();
+        
 
         InitializeMissionBubble();
 
@@ -31,6 +43,8 @@ public class MissionsInformationBubble : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             informationBubble.SetActive(true);
+            textParticlePrefab.SetActive(false);
+
         }
     }
 
@@ -39,6 +53,8 @@ public class MissionsInformationBubble : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             informationBubble.SetActive(false);
+            textParticlePrefab.SetActive(true);
+
         }
     }
 
@@ -46,6 +62,8 @@ public class MissionsInformationBubble : MonoBehaviour
     {
         iconMission.sprite = missionSO.Icon;
         cuantityText.text = "x" + missionSO.Cuantity;
+
+        textParticle.Play();
     }
 
     private void OnAcceptMissionClicked()
@@ -54,7 +72,9 @@ public class MissionsInformationBubble : MonoBehaviour
         //Missions missions = FindObjectOfType<Missions>().gameObject.GetComponent<Missions>();
         Missions.Instance.AddToMissions(missionSO, false);
         //informationBubble.SetActive(false);
-        Destroy(this.gameObject);
+        Destroy(informationBubble);
+        //Destroy(informationBubble);
+        Destroy(this);
 
     }
 

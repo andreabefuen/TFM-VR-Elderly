@@ -12,11 +12,16 @@ public class DefaultPeopleBehaviourSO : PeopleBehaviourSO
 
     public string animationMovementTrigger;
     public string animationIdleTrigger;
+    public string animationGreetTrigger;
 
     public StringEvent onMoveCharacter;
 
+    bool canMove = false;
+
     public override IEnumerator MovementCoroutine(MonoBehaviour obj, Transform goal)
     {
+        yield return new WaitUntil(() => canMove);
+
         var transform = obj.transform;
         //transform.LookAt(goal);
         NavMeshAgent navMesh = obj.GetComponent<NavMeshAgent>();
@@ -52,6 +57,9 @@ public class DefaultPeopleBehaviourSO : PeopleBehaviourSO
 
     public override IEnumerator MovementCoroutine(MonoBehaviour obj, Vector3 goal)
     {
+
+        yield return new WaitUntil(() => canMove);
+
         var transform = obj.transform;
         //transform.LookAt(goal);
         NavMeshAgent navMesh = obj.GetComponent<NavMeshAgent>();
@@ -113,5 +121,20 @@ public class DefaultPeopleBehaviourSO : PeopleBehaviourSO
         }
 
         yield return null;
+    }
+
+    public override IEnumerator WaitForMissionAcceptance(MonoBehaviour obj)
+    {
+        MissionsInformationBubble aux = obj.GetComponent<MissionsInformationBubble>();
+        if (!aux.missionSO.IsAccepted)
+        {
+            Debug.Log("Hola");
+            canMove = false;
+            onMoveCharacter?.Raise(animationGreetTrigger);
+
+            yield return new WaitUntil(() => aux.missionSO.IsAccepted);
+
+            canMove = true;
+        }
     }
 }

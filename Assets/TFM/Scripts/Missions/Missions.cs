@@ -43,6 +43,7 @@ public class Missions : MonoBehaviour
         {
 
             missions.Add(mission, BoolToString(state));
+            mission.MissionAccepted();
         }
         else
         {

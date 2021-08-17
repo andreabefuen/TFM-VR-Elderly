@@ -7,6 +7,7 @@ public class PeopleBehaviour : MonoBehaviour
     public PeopleBehaviourSO PeopleBehaviourSO;
     public Animator animatorController;
 
+
     public void Talk()
     {
         if (PeopleBehaviourSO) StartCoroutine(PeopleBehaviourSO.TalkCoroutine(this));
@@ -14,5 +15,10 @@ public class PeopleBehaviour : MonoBehaviour
     public void WalkRandomly(Vector3 goal)
     {
         if (PeopleBehaviourSO) StartCoroutine(PeopleBehaviourSO.MovementCoroutine(this, goal));
+    }
+
+    public void WaitForAcceptMission()
+    {
+        if (PeopleBehaviourSO) StartCoroutine(PeopleBehaviourSO.WaitForMissionAcceptance(this));
     }
 }
