@@ -1,3 +1,4 @@
+using Scripts.Tools.ScriptableEvents.Events;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,6 +21,8 @@ namespace TFM.ScriptableObjects
         public string ItemName => itemName;
         public string Description => description;
 
+        public VoidEvent onGrabItem;
+
         public void BuyItem()
         {
             Debug.Log("ITEM BUY: " + itemName);
@@ -31,6 +34,12 @@ namespace TFM.ScriptableObjects
         {
             Debug.Log("HAZ COSAS");
 
+        }
+
+        public void GrabbingItem()
+        {
+            Debug.Log("Item grab");
+            onGrabItem?.Raise();
         }
 
     }

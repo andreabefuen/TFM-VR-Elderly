@@ -18,6 +18,14 @@ public class PickupItem : MonoBehaviour
     public delegate void PickItem();
     public event PickItem pickedItem;
 
+    private void Awake()
+    {
+        
+        leftRayInteractor = GameObject.Find("Left Ray Interactor").GetComponent<XRController>();
+
+        rightRayInteractor = GameObject.Find("Right Ray Interactor").GetComponent<XRController>();
+
+    }
 
     public bool CheckIfActivated(XRController controller)
     {
@@ -25,7 +33,7 @@ public class PickupItem : MonoBehaviour
         return isActivated;
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         //if(other.gameObject.layer.ToString() == "PlayerRightHand" || other.gameObject.layer.ToString() == "PlayerLeftHand")
         //{
@@ -37,7 +45,7 @@ public class PickupItem : MonoBehaviour
         //}
 
         Debug.Log(other.gameObject.name);
-        if (other.gameObject.layer == LayerMask.NameToLayer("PlayerRightHand"))
+        if (other.gameObject.layer == LayerMask.NameToLayer("PlayerRightHand") && CheckIfActivated(rightRayInteractor))
         {
             AddToInventoryAndDestroyThis();
         }
@@ -49,9 +57,8 @@ public class PickupItem : MonoBehaviour
         Inventory inventory = FindObjectOfType<Inventory>().gameObject.GetComponent<Inventory>();
         inventory.AddToInventory(item);
         this.gameObject.SetActive(false);
-        pickedItem();
-
-
+        item.GrabbingItem();
+        //pickedItem();
     }
 
   // public void SetItem(ItemSO item, int amount = 1)
