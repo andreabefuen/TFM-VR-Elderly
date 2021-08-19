@@ -91,10 +91,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalHits: 3
+  totalResources: 4
+  toolName: Axe
   dustParticlePrefab: {fileID: 153256, guid: fe394d041df1a0547990f49cf653249f, type: 3}
   startPositionParticle: {fileID: 959675921669747342}
   treeGameobject: {fileID: 960698532108709599}
-  woodStack: {fileID: 8047034176916210199, guid: 24965bafe2c3c0c449e00f5573b50c0d,
+  resourcePrefab: {fileID: 8047034176916210199, guid: 24965bafe2c3c0c449e00f5573b50c0d,
     type: 3}
 --- !u!1001 &959675922584062296
 PrefabInstance:

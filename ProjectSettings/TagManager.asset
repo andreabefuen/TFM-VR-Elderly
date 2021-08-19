@@ -7,6 +7,7 @@ TagManager:
   - Watering Can
   - Food
   - Axe
+  - Pickaxe
   layers:
   - Default
   - TransparentFX

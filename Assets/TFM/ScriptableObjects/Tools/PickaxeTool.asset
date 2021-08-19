@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 14fcd214384d2af4cac694d5430646e1, type: 3}
-  m_Name: AxeTool
+  m_Name: PickaxeTool
   m_EditorClassIdentifier: 
-  toolName: Axe
+  toolName: Pico
   toolDescription: 
   toolPrefab: {fileID: 0}
   onGrabTool: {fileID: 0}
   onReleaseTool: {fileID: 0}
   particles: {fileID: 0}
-  hitSound: {fileID: 11400000, guid: 8a5dbc02b529e354dbef673d8cf81b47, type: 2}
+  hitSound: {fileID: 11400000, guid: e53efdd5e93c96348a6d195a0207096d, type: 2}

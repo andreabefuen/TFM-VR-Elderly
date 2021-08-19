@@ -15,4 +15,8 @@ public class ToolBehaviour : MonoBehaviour
     {
         tool.ReleaseTool();
     }
+    public void Hit()
+    {
+        tool.HitSound();
+    }
 }

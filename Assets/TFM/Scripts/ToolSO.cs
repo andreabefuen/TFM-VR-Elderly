@@ -21,6 +21,9 @@ namespace TFM.ScriptableObjects
         public VoidEvent onReleaseTool;
 
         public ParticleSystem particles;
+        public AudioEvent hitSound;
+
+
 
         public void GrabbingTool()
         {
@@ -32,6 +35,17 @@ namespace TFM.ScriptableObjects
         {
             Debug.LogError("Release " + toolName);
             onReleaseTool?.Raise();
+        }
+
+        public void HitSound()
+        {
+            if (hitSound)
+            {
+                var audioPlayer = new GameObject("Hit audio", typeof(AudioSource)).GetComponent<AudioSource>();
+                //audioPlayer.transform.position = basePosition;
+                hitSound.Play(audioPlayer);
+                Destroy(audioPlayer.gameObject, audioPlayer.clip.length * audioPlayer.pitch);
+            }
         }
 
         IEnumerator DisplayTool(MonoBehaviour obj)

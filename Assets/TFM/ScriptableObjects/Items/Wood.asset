@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7b1877fbcee4384391bb93c4ef39976, type: 3}
   m_Name: Wood
   m_EditorClassIdentifier: 
-  itemName: 
+  itemName: Madera
   description: 
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 2ddbd0729b57bee48a9930dfce0ec6e5, type: 3}
   value: 000000000000000000000000
   prefab: {fileID: 8047034176916210199, guid: 24965bafe2c3c0c449e00f5573b50c0d, type: 3}
   onGrabItem: {fileID: 11400000, guid: ff9551867316062478533dccfd715413, type: 2}

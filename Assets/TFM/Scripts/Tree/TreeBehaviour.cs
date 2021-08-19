@@ -2,57 +2,48 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TreeBehaviour : MonoBehaviour
+
+public class TreeBehaviour : ResourceBehaviour
 {
-    public int totalHits = 3;
-    public GameObject dustParticlePrefab;
-    public Transform startPositionParticle;
-    public GameObject treeGameobject;
-
-    public GameObject woodStack;
     int count = 0;
-    int countResources = 4;
 
-    private void Awake()
-    {
-        StartCoroutine(CuttingDown());
-    }
 
-    private void OnTriggerEnter(Collider other)
+    public override void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Axe")
+        if(other.gameObject.tag == toolName)
         {
+            other.GetComponent<ToolBehaviour>().Hit();
             count++;
             Debug.Log("Cut!");
         }
     }
 
-    IEnumerator CuttingDown()
+    public override IEnumerator DoAction()
     {
         yield return new WaitUntil(() => count >= totalHits);
         GameObject particles = Instantiate(dustParticlePrefab, startPositionParticle);
         dustParticlePrefab.GetComponent<ParticleSystem>().Play();
-        StartCoroutine(FellDown());
+        StartCoroutine(FinishGetResource());
 
     }
 
-    IEnumerator FellDown()
+    public override IEnumerator FinishGetResource()
     {
-        while(treeGameobject.transform.rotation.eulerAngles.z < 90)
+        while(mainResourceGameobject.transform.rotation.eulerAngles.z < 90)
         {
-            treeGameobject.transform.Rotate(Vector3.forward * Time.deltaTime * 100);
+            mainResourceGameobject.transform.Rotate(Vector3.forward * Time.deltaTime * 100);
             yield return null;
         }
-        Destroy(treeGameobject);
-        Invoke("CreateResources", 3f);
+        Destroy(mainResourceGameobject);
+        Invoke("CreateResources", 0.5f);
     }
 
-    void CreateResources()
+    public override void CreateResources()
     {
-        for (int i = 0; i < countResources; i++)
+        for (int i = 0; i < totalResources; i++)
         {
-            GameObject aux = Instantiate(woodStack);
-            aux.GetComponent<Rigidbody>().AddForce(Vector3.up * 10, ForceMode.Impulse);
+            GameObject aux = Instantiate(resourcePrefab, this.gameObject.transform);
+            aux.GetComponent<Rigidbody>().AddForce(Vector3.up * Random.Range(1f, 3f), ForceMode.Impulse);
 
         }
     }
