@@ -22,6 +22,7 @@ public class MissionsSaveSystem : MonoBehaviour
         {
             missions.SetDictionary(LoadMissions());
         }
+        DontDestroyOnLoad(this);
     }
 
 

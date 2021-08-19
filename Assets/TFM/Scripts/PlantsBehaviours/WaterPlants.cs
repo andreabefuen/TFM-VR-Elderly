@@ -1,10 +1,13 @@
 ﻿using Assets.TFM.Scripts.Utils;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class WaterPlants : CollisionBehaviour
 {
+    public Crops crop;
+    public int minutesPassed = 10;
     public GrowingBehaviour[] plantToGrow;
     public int numPlants;
     public PickupItem[] pickableItems;
@@ -30,10 +33,16 @@ public class WaterPlants : CollisionBehaviour
         {
             item.pickedItem -= OneLess;
         }
+        GameFlowManager.Instance.SaveCurrentTimeCrop(crop);
     }
 
     public override void OnCollisionEnter(Collision collider)
     {
+        if (!GetIfPossibleWatering())
+        {
+            Debug.LogError("Not enough time"); return;
+        }
+
         if (collider.gameObject.CompareTag("Watering Can"))
         {
             if(numPlants == 0)
@@ -51,6 +60,8 @@ public class WaterPlants : CollisionBehaviour
 
     public override void OnTriggerEnter(Collider other)
     {
+        if (!GetIfPossibleWatering()) { Debug.LogError("Not enough time"); return; }
+            
         if (other.CompareTag("Watering Can"))
         {
             if (numPlants == 0)
@@ -63,6 +74,7 @@ public class WaterPlants : CollisionBehaviour
 
             }
             Debug.Log("GROW");
+            GameFlowManager.Instance.SaveCurrentTimeCrop(crop);
         }
     }
     void OneLess()
@@ -78,5 +90,10 @@ public class WaterPlants : CollisionBehaviour
         }
 
         numPlants = plantToGrow.Length;
+    }
+
+    bool GetIfPossibleWatering()
+    {
+        return GameFlowManager.Instance.MinutesIntPassedCrop(crop) >= minutesPassed ? true : false;
     }
 }

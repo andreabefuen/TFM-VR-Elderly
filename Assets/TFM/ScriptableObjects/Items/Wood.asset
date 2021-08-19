@@ -16,5 +16,5 @@ MonoBehaviour:
   description: 
   icon: {fileID: 0}
   value: 000000000000000000000000
-  prefab: {fileID: 0}
+  prefab: {fileID: 8047034176916210199, guid: 24965bafe2c3c0c449e00f5573b50c0d, type: 3}
   onGrabItem: {fileID: 11400000, guid: ff9551867316062478533dccfd715413, type: 2}
