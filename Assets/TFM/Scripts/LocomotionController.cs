@@ -20,7 +20,6 @@ namespace TFM.VRScripts
         public bool EnableLeftTeleport { get; set; } = true;
         public bool EnableRightTeleport { get; set; } = true;
 
-
         // Update is called once per frame
         void Update()
         {

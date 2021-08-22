@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
-
+    
     #region SINGLETON PATTERN
     public static PlayerStats _instance;
     public static PlayerStats Instance
@@ -27,7 +27,7 @@ public class PlayerStats : MonoBehaviour
         }
     }
     #endregion
-
+    
     [SerializeField] private int startMoney = 0;
 
     private int money;
