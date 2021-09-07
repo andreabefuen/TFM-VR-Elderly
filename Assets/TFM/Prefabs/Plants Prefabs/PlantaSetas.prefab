@@ -1,32 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!65 &452356648221441511
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 451214875280281209}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.3839904, y: 0.47697264, z: 0.34795547}
-  m_Center: {x: 0, y: 0.092940845, z: 0.000000007450581}
---- !u!114 &452356648221441508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 451214875280281209}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c919cfc5fbdf8e4aa177d697aa2cc48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  plantGrowing: {fileID: 11400000, guid: 04bb412d0579c4341983b50c50fbaf03, type: 2}
-  stages: 1
 --- !u!65 &452356648406628937
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35,12 +8,12 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 450968613481778140}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.46885198, y: 0.84304756, z: 0.4320691}
   m_Center: {x: -0.06816628, y: 0.42152378, z: 0.0002206415}
---- !u!114 &452356648406628942
+--- !u!114 &5072899703983298161
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -49,65 +22,104 @@ MonoBehaviour:
   m_GameObject: {fileID: 450968613481778140}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c919cfc5fbdf8e4aa177d697aa2cc48, type: 3}
+  m_Script: {fileID: 11500000, guid: 12f3a230f4bdcdf42ba412ccf9989886, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plantGrowing: {fileID: 11400000, guid: 04bb412d0579c4341983b50c50fbaf03, type: 2}
-  stages: 1
---- !u!65 &452356649114327956
+  item: {fileID: 11400000, guid: 393daad53de357c42babd76807a42914, type: 2}
+  grabActivationButton: 3
+  activationThreshold: 0.1
+  leftRayInteractor: {fileID: 0}
+  rightRayInteractor: {fileID: 0}
+--- !u!65 &452356649435585241
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 451431692131097093}
+  m_GameObject: {fileID: 450968613642654969}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.48454309, y: 0.4536653, z: 0.47379628}
-  m_Center: {x: 0.0011010543, y: 0.104594454, z: -0.03207539}
---- !u!114 &452356649114327957
+  m_Size: {x: 0.46885198, y: 0.84304756, z: 0.4320691}
+  m_Center: {x: -0.06816628, y: 0.42152378, z: 0.0002206415}
+--- !u!114 &856904973502241845
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 451431692131097093}
+  m_GameObject: {fileID: 450968613642654969}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c919cfc5fbdf8e4aa177d697aa2cc48, type: 3}
+  m_Script: {fileID: 11500000, guid: 12f3a230f4bdcdf42ba412ccf9989886, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plantGrowing: {fileID: 11400000, guid: 04bb412d0579c4341983b50c50fbaf03, type: 2}
-  stages: 1
---- !u!65 &452356649292229646
+  item: {fileID: 11400000, guid: 393daad53de357c42babd76807a42914, type: 2}
+  grabActivationButton: 3
+  activationThreshold: 0.1
+  leftRayInteractor: {fileID: 0}
+  rightRayInteractor: {fileID: 0}
+--- !u!65 &452356648221441511
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 451431692043697067}
+  m_GameObject: {fileID: 451214875280281209}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.48454309, y: 0.4536653, z: 0.47379628}
-  m_Center: {x: 0.0011010543, y: 0.104594454, z: -0.03207539}
---- !u!114 &452356649292229647
+  m_Size: {x: 0.3839904, y: 0.47697264, z: 0.34795547}
+  m_Center: {x: 0, y: 0.092940845, z: 0.000000007450581}
+--- !u!114 &5048754975879305061
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 451431692043697067}
+  m_GameObject: {fileID: 451214875280281209}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c919cfc5fbdf8e4aa177d697aa2cc48, type: 3}
+  m_Script: {fileID: 11500000, guid: 12f3a230f4bdcdf42ba412ccf9989886, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plantGrowing: {fileID: 11400000, guid: 04bb412d0579c4341983b50c50fbaf03, type: 2}
-  stages: 1
+  item: {fileID: 11400000, guid: 393daad53de357c42babd76807a42914, type: 2}
+  grabActivationButton: 3
+  activationThreshold: 0.1
+  leftRayInteractor: {fileID: 0}
+  rightRayInteractor: {fileID: 0}
+--- !u!65 &452356649939338784
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451214875358070591}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3839904, y: 0.47697264, z: 0.34795547}
+  m_Center: {x: 0, y: 0.092940845, z: 0.000000007450581}
+--- !u!114 &7053831146132980766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451214875358070591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12f3a230f4bdcdf42ba412ccf9989886, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 393daad53de357c42babd76807a42914, type: 2}
+  grabActivationButton: 3
+  activationThreshold: 0.1
+  leftRayInteractor: {fileID: 0}
+  rightRayInteractor: {fileID: 0}
 --- !u!65 &452356649429965333
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -121,7 +133,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5517663, y: 0.47706708, z: 0.6902381}
   m_Center: {x: -0.000000059604645, y: 0.092893615, z: 0}
---- !u!114 &452356649429965354
+--- !u!114 &2677384148154927031
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,92 +142,74 @@ MonoBehaviour:
   m_GameObject: {fileID: 451417249853147937}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c919cfc5fbdf8e4aa177d697aa2cc48, type: 3}
+  m_Script: {fileID: 11500000, guid: 12f3a230f4bdcdf42ba412ccf9989886, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plantGrowing: {fileID: 11400000, guid: 04bb412d0579c4341983b50c50fbaf03, type: 2}
-  stages: 1
---- !u!65 &452356649435585241
+  item: {fileID: 11400000, guid: 393daad53de357c42babd76807a42914, type: 2}
+  grabActivationButton: 3
+  activationThreshold: 0.1
+  leftRayInteractor: {fileID: 0}
+  rightRayInteractor: {fileID: 0}
+--- !u!65 &452356649292229646
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 450968613642654969}
+  m_GameObject: {fileID: 451431692043697067}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.46885198, y: 0.84304756, z: 0.4320691}
-  m_Center: {x: -0.06816628, y: 0.42152378, z: 0.0002206415}
---- !u!114 &452356649435585246
+  m_Size: {x: 0.48454309, y: 0.4536653, z: 0.47379628}
+  m_Center: {x: 0.0011010543, y: 0.104594454, z: -0.03207539}
+--- !u!114 &7326768011135261845
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 450968613642654969}
+  m_GameObject: {fileID: 451431692043697067}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c919cfc5fbdf8e4aa177d697aa2cc48, type: 3}
+  m_Script: {fileID: 11500000, guid: 12f3a230f4bdcdf42ba412ccf9989886, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plantGrowing: {fileID: 11400000, guid: 04bb412d0579c4341983b50c50fbaf03, type: 2}
-  stages: 1
---- !u!65 &452356649795685283
+  item: {fileID: 11400000, guid: 393daad53de357c42babd76807a42914, type: 2}
+  grabActivationButton: 3
+  activationThreshold: 0.1
+  leftRayInteractor: {fileID: 0}
+  rightRayInteractor: {fileID: 0}
+--- !u!65 &452356649114327956
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 451417249136488930}
+  m_GameObject: {fileID: 451431692131097093}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.5517663, y: 0.47706708, z: 0.6902381}
-  m_Center: {x: -0.000000059604645, y: 0.092893615, z: 0}
---- !u!114 &452356649795685280
+  m_Size: {x: 0.48454309, y: 0.4536653, z: 0.47379628}
+  m_Center: {x: 0.0011010543, y: 0.104594454, z: -0.03207539}
+--- !u!114 &6913946864174466748
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 451417249136488930}
+  m_GameObject: {fileID: 451431692131097093}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c919cfc5fbdf8e4aa177d697aa2cc48, type: 3}
+  m_Script: {fileID: 11500000, guid: 12f3a230f4bdcdf42ba412ccf9989886, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plantGrowing: {fileID: 11400000, guid: 04bb412d0579c4341983b50c50fbaf03, type: 2}
-  stages: 1
---- !u!65 &452356649939338784
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 451214875358070591}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.3839904, y: 0.47697264, z: 0.34795547}
-  m_Center: {x: 0, y: 0.092940845, z: 0.000000007450581}
---- !u!114 &452356649939338785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 451214875358070591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c919cfc5fbdf8e4aa177d697aa2cc48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  plantGrowing: {fileID: 11400000, guid: 04bb412d0579c4341983b50c50fbaf03, type: 2}
-  stages: 1
+  item: {fileID: 11400000, guid: 393daad53de357c42babd76807a42914, type: 2}
+  grabActivationButton: 3
+  activationThreshold: 0.1
+  leftRayInteractor: {fileID: 0}
+  rightRayInteractor: {fileID: 0}
 --- !u!1 &6989351410187639431
 GameObject:
   m_ObjectHideFlags: 0
@@ -264,7 +258,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4286058605f34164e84d1ec7d1164b3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  crop: 1
+  minutesPassed: 2
   plantToGrow: []
+  numPlants: 0
+  pickableItems: []
 --- !u!65 &6989351410187639430
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -273,7 +271,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6989351410187639431}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 3.789712, y: 0.9730458, z: 1.9703343}
@@ -361,6 +359,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &6989351410554623682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -387,6 +386,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6989351410871568433}
+  - component: {fileID: 1440495565103351551}
+  - component: {fileID: 7377052698069167657}
   m_Layer: 0
   m_Name: PlantToGrow
   m_TagString: Untagged
@@ -416,6 +417,33 @@ Transform:
   m_Father: {fileID: 6989351410187639451}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1440495565103351551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6989351410871568444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c919cfc5fbdf8e4aa177d697aa2cc48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plantGrowing: {fileID: 11400000, guid: 04bb412d0579c4341983b50c50fbaf03, type: 2}
+  stages: 1
+--- !u!65 &7377052698069167657
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6989351410871568444}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.6219905, z: 2.0518527}
+  m_Center: {x: 0, y: -0.22735354, z: -0.1040895}
 --- !u!1 &6989351411321024034
 GameObject:
   m_ObjectHideFlags: 0
@@ -942,6 +970,10 @@ PrefabInstance:
       value: SM_Plant_Mushrooms_03
       objectReference: {fileID: 0}
     - target: {fileID: 4560157829328276, guid: c4be778793f575b42b8d942b78462284, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560157829328276, guid: c4be778793f575b42b8d942b78462284, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.444
       objectReference: {fileID: 0}
@@ -954,6 +986,10 @@ PrefabInstance:
       value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 4560157829328276, guid: c4be778793f575b42b8d942b78462284, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560157829328276, guid: c4be778793f575b42b8d942b78462284, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -964,14 +1000,6 @@ PrefabInstance:
     - target: {fileID: 4560157829328276, guid: c4be778793f575b42b8d942b78462284, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4560157829328276, guid: c4be778793f575b42b8d942b78462284, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4560157829328276, guid: c4be778793f575b42b8d942b78462284, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4560157829328276, guid: c4be778793f575b42b8d942b78462284, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1011,6 +1039,10 @@ PrefabInstance:
       value: SM_Plant_Mushrooms_02 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 4129944272498866, guid: d3b497db883149045a9c1218adca475a, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4129944272498866, guid: d3b497db883149045a9c1218adca475a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.1219999
       objectReference: {fileID: 0}
@@ -1021,6 +1053,10 @@ PrefabInstance:
     - target: {fileID: 4129944272498866, guid: d3b497db883149045a9c1218adca475a, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.431
+      objectReference: {fileID: 0}
+    - target: {fileID: 4129944272498866, guid: d3b497db883149045a9c1218adca475a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4129944272498866, guid: d3b497db883149045a9c1218adca475a, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1035,14 +1071,6 @@ PrefabInstance:
       value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4129944272498866, guid: d3b497db883149045a9c1218adca475a, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4129944272498866, guid: d3b497db883149045a9c1218adca475a, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4129944272498866, guid: d3b497db883149045a9c1218adca475a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
@@ -1054,6 +1082,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2442248859685831880, guid: d3b497db883149045a9c1218adca475a,
+        type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: 393daad53de357c42babd76807a42914,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3b497db883149045a9c1218adca475a, type: 3}
 --- !u!1 &451417249853147937 stripped
@@ -1080,6 +1114,10 @@ PrefabInstance:
       value: SM_Plant_Mushrooms_04
       objectReference: {fileID: 0}
     - target: {fileID: 4485607470090110, guid: d6f6b930859540e44aa1b08dc38756a3, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4485607470090110, guid: d6f6b930859540e44aa1b08dc38756a3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.373
       objectReference: {fileID: 0}
@@ -1092,6 +1130,10 @@ PrefabInstance:
       value: 0.465
       objectReference: {fileID: 0}
     - target: {fileID: 4485607470090110, guid: d6f6b930859540e44aa1b08dc38756a3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4485607470090110, guid: d6f6b930859540e44aa1b08dc38756a3, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -1102,14 +1144,6 @@ PrefabInstance:
     - target: {fileID: 4485607470090110, guid: d6f6b930859540e44aa1b08dc38756a3, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4485607470090110, guid: d6f6b930859540e44aa1b08dc38756a3, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4485607470090110, guid: d6f6b930859540e44aa1b08dc38756a3, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4485607470090110, guid: d6f6b930859540e44aa1b08dc38756a3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1125,15 +1159,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6f6b930859540e44aa1b08dc38756a3, type: 3}
---- !u!1 &451431692043697067 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1364780636854694, guid: d6f6b930859540e44aa1b08dc38756a3,
-    type: 3}
-  m_PrefabInstance: {fileID: 452356648700240397}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &452884834193974643 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4485607470090110, guid: d6f6b930859540e44aa1b08dc38756a3,
+    type: 3}
+  m_PrefabInstance: {fileID: 452356648700240397}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &451431692043697067 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1364780636854694, guid: d6f6b930859540e44aa1b08dc38756a3,
     type: 3}
   m_PrefabInstance: {fileID: 452356648700240397}
   m_PrefabAsset: {fileID: 0}
@@ -1149,6 +1183,10 @@ PrefabInstance:
       value: SM_Plant_Mushrooms_04 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 4485607470090110, guid: d6f6b930859540e44aa1b08dc38756a3, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4485607470090110, guid: d6f6b930859540e44aa1b08dc38756a3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.9739999
       objectReference: {fileID: 0}
@@ -1161,6 +1199,10 @@ PrefabInstance:
       value: 0.465
       objectReference: {fileID: 0}
     - target: {fileID: 4485607470090110, guid: d6f6b930859540e44aa1b08dc38756a3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4485607470090110, guid: d6f6b930859540e44aa1b08dc38756a3, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -1171,14 +1213,6 @@ PrefabInstance:
     - target: {fileID: 4485607470090110, guid: d6f6b930859540e44aa1b08dc38756a3, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4485607470090110, guid: d6f6b930859540e44aa1b08dc38756a3, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4485607470090110, guid: d6f6b930859540e44aa1b08dc38756a3, type: 3}
-      propertyPath: m_RootOrder
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4485607470090110, guid: d6f6b930859540e44aa1b08dc38756a3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1218,6 +1252,10 @@ PrefabInstance:
       value: SM_Plant_Mushrooms_03 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 4560157829328276, guid: c4be778793f575b42b8d942b78462284, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560157829328276, guid: c4be778793f575b42b8d942b78462284, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.1569998
       objectReference: {fileID: 0}
@@ -1230,6 +1268,10 @@ PrefabInstance:
       value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 4560157829328276, guid: c4be778793f575b42b8d942b78462284, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560157829328276, guid: c4be778793f575b42b8d942b78462284, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -1240,14 +1282,6 @@ PrefabInstance:
     - target: {fileID: 4560157829328276, guid: c4be778793f575b42b8d942b78462284, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4560157829328276, guid: c4be778793f575b42b8d942b78462284, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4560157829328276, guid: c4be778793f575b42b8d942b78462284, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4560157829328276, guid: c4be778793f575b42b8d942b78462284, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1287,6 +1321,10 @@ PrefabInstance:
       value: SM_Plant_Mushrooms_02
       objectReference: {fileID: 0}
     - target: {fileID: 4129944272498866, guid: d3b497db883149045a9c1218adca475a, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4129944272498866, guid: d3b497db883149045a9c1218adca475a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.479
       objectReference: {fileID: 0}
@@ -1297,6 +1335,10 @@ PrefabInstance:
     - target: {fileID: 4129944272498866, guid: d3b497db883149045a9c1218adca475a, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.431
+      objectReference: {fileID: 0}
+    - target: {fileID: 4129944272498866, guid: d3b497db883149045a9c1218adca475a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4129944272498866, guid: d3b497db883149045a9c1218adca475a, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1311,14 +1353,6 @@ PrefabInstance:
       value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4129944272498866, guid: d3b497db883149045a9c1218adca475a, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4129944272498866, guid: d3b497db883149045a9c1218adca475a, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4129944272498866, guid: d3b497db883149045a9c1218adca475a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
@@ -1330,17 +1364,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2442248859685831880, guid: d3b497db883149045a9c1218adca475a,
+        type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: 393daad53de357c42babd76807a42914,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3b497db883149045a9c1218adca475a, type: 3}
 --- !u!4 &453099740727047130 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4129944272498866, guid: d3b497db883149045a9c1218adca475a,
-    type: 3}
-  m_PrefabInstance: {fileID: 452356649287844712}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &451417249136488930 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1361614101361290, guid: d3b497db883149045a9c1218adca475a,
     type: 3}
   m_PrefabInstance: {fileID: 452356649287844712}
   m_PrefabAsset: {fileID: 0}
@@ -1356,6 +1390,10 @@ PrefabInstance:
       value: SM_Plant_Mushrooms_05 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 4825834909521966, guid: ac42f59b9c44c274b9612f7df5333cf3, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4825834909521966, guid: ac42f59b9c44c274b9612f7df5333cf3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.937
       objectReference: {fileID: 0}
@@ -1368,6 +1406,10 @@ PrefabInstance:
       value: -0.376
       objectReference: {fileID: 0}
     - target: {fileID: 4825834909521966, guid: ac42f59b9c44c274b9612f7df5333cf3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4825834909521966, guid: ac42f59b9c44c274b9612f7df5333cf3, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -1378,14 +1420,6 @@ PrefabInstance:
     - target: {fileID: 4825834909521966, guid: ac42f59b9c44c274b9612f7df5333cf3, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4825834909521966, guid: ac42f59b9c44c274b9612f7df5333cf3, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4825834909521966, guid: ac42f59b9c44c274b9612f7df5333cf3, type: 3}
-      propertyPath: m_RootOrder
-      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4825834909521966, guid: ac42f59b9c44c274b9612f7df5333cf3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1425,6 +1459,10 @@ PrefabInstance:
       value: SM_Plant_Mushrooms_05
       objectReference: {fileID: 0}
     - target: {fileID: 4825834909521966, guid: ac42f59b9c44c274b9612f7df5333cf3, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4825834909521966, guid: ac42f59b9c44c274b9612f7df5333cf3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.336
       objectReference: {fileID: 0}
@@ -1437,6 +1475,10 @@ PrefabInstance:
       value: -0.376
       objectReference: {fileID: 0}
     - target: {fileID: 4825834909521966, guid: ac42f59b9c44c274b9612f7df5333cf3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4825834909521966, guid: ac42f59b9c44c274b9612f7df5333cf3, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -1447,14 +1489,6 @@ PrefabInstance:
     - target: {fileID: 4825834909521966, guid: ac42f59b9c44c274b9612f7df5333cf3, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4825834909521966, guid: ac42f59b9c44c274b9612f7df5333cf3, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4825834909521966, guid: ac42f59b9c44c274b9612f7df5333cf3, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4825834909521966, guid: ac42f59b9c44c274b9612f7df5333cf3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 433320298696875604}
   - component: {fileID: 433320298696875601}
   - component: {fileID: 433320298696875600}
+  - component: {fileID: -1793311382337845269}
   m_Layer: 0
   m_Name: MANAGERS
   m_TagString: Untagged
@@ -87,3 +88,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuCanvasObject: {fileID: 0}
   menuButtonWatcher: {fileID: 433320298696875601}
+--- !u!114 &-1793311382337845269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433320298696875603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e76f70a363174dc4fbc4199829f9e5ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  userName: andrea
+  channelName: ch1

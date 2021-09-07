@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7b1877fbcee4384391bb93c4ef39976, type: 3}
-  m_Name: Tomates
+  m_Name: Hongos
   m_EditorClassIdentifier: 
-  itemName: Tomates
+  itemName: Hongos
   description: 
-  icon: {fileID: -8451903413029604105, guid: 5cf98ed5b8b44054c96ff63ae91eb566, type: 3}
+  icon: {fileID: -8736168082973103919, guid: 5cf98ed5b8b44054c96ff63ae91eb566, type: 3}
   value: 000000000000000000000000
-  prefab: {fileID: 6588284220388178225, guid: a51062671b0ea0749917ba394a4d1fda, type: 3}
+  prefab: {fileID: 0}
   onGrabItem: {fileID: 0}

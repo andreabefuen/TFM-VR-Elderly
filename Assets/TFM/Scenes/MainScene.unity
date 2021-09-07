@@ -6814,25 +6814,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6989351410187639430, guid: 5fbae8ba9dadaf4499ae47f133bd43b4,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6989351410187639431, guid: 5fbae8ba9dadaf4499ae47f133bd43b4,
         type: 3}
       propertyPath: m_Name
       value: PlantaSetas
-      objectReference: {fileID: 0}
-    - target: {fileID: 6989351410187639450, guid: 5fbae8ba9dadaf4499ae47f133bd43b4,
-        type: 3}
-      propertyPath: crop
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6989351410187639450, guid: 5fbae8ba9dadaf4499ae47f133bd43b4,
-        type: 3}
-      propertyPath: minutesPassed
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6989351410187639451, guid: 5fbae8ba9dadaf4499ae47f133bd43b4,
         type: 3}
@@ -7171,6 +7156,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6816967537365975642, guid: 403f903fb813e5d42ba8635464aacecb,
+        type: 3}
+      propertyPath: grabActivationButton
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133783403150021030, guid: 403f903fb813e5d42ba8635464aacecb,
+        type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9133783403869134306, guid: 403f903fb813e5d42ba8635464aacecb,
         type: 3}
       propertyPath: m_Name
@@ -7235,6 +7230,11 @@ PrefabInstance:
         type: 3}
       propertyPath: crop
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133783403869134335, guid: 403f903fb813e5d42ba8635464aacecb,
+        type: 3}
+      propertyPath: minutesPassed
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 403f903fb813e5d42ba8635464aacecb, type: 3}

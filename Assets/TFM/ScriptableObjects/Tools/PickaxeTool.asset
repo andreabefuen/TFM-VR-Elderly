@@ -15,7 +15,7 @@ MonoBehaviour:
   toolName: Pico
   toolDescription: 
   toolPrefab: {fileID: 0}
-  onGrabTool: {fileID: 0}
+  onGrabTool: {fileID: 11400000, guid: ff9551867316062478533dccfd715413, type: 2}
   onReleaseTool: {fileID: 0}
   particles: {fileID: 0}
   hitSound: {fileID: 11400000, guid: e53efdd5e93c96348a6d195a0207096d, type: 2}
