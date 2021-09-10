@@ -23,6 +23,7 @@ public class MissionsInformationBubble : MonoBehaviour
     {
         if (missionSO.IsAccepted)
         {
+
             Destroy(this);
             return;
         }
@@ -44,6 +45,7 @@ public class MissionsInformationBubble : MonoBehaviour
         {
             informationBubble.SetActive(true);
             textParticlePrefab.SetActive(false);
+            GetComponent<PeopleBehaviour>().Talk();
 
         }
     }

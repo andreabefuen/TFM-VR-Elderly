@@ -20,7 +20,7 @@ public class DefaultPeopleBehaviourSO : PeopleBehaviourSO
 
     public override IEnumerator MovementCoroutine(MonoBehaviour obj, Transform goal)
     {
-        yield return new WaitUntil(() => canMove);
+        while(!canMove)  yield return new WaitUntil(() => canMove);
 
         var transform = obj.transform;
         //transform.LookAt(goal);
@@ -57,8 +57,8 @@ public class DefaultPeopleBehaviourSO : PeopleBehaviourSO
 
     public override IEnumerator MovementCoroutine(MonoBehaviour obj, Vector3 goal)
     {
-
-        yield return new WaitUntil(() => canMove);
+        while (!canMove) yield return new WaitUntil(() => canMove == true);
+        Debug.Log("SE PUEDE MOVER");
 
         var transform = obj.transform;
         //transform.LookAt(goal);
@@ -126,15 +126,12 @@ public class DefaultPeopleBehaviourSO : PeopleBehaviourSO
     public override IEnumerator WaitForMissionAcceptance(MonoBehaviour obj)
     {
         MissionsInformationBubble aux = obj.GetComponent<MissionsInformationBubble>();
-        if (!aux.missionSO.IsAccepted)
-        {
-            Debug.Log("Hola");
-            canMove = false;
-            onMoveCharacter?.Raise(animationGreetTrigger);
+        canMove = false;
+        onMoveCharacter?.Raise(animationGreetTrigger);
+        while(!aux.missionSO.IsAccepted) yield return new WaitUntil(() => aux.missionSO.IsAccepted == true);
+        canMove = true;
+        Debug.Log("mission aaceptada");
+       
 
-            yield return new WaitUntil(() => aux.missionSO.IsAccepted);
-
-            canMove = true;
-        }
     }
 }
