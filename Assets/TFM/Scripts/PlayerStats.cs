@@ -6,28 +6,25 @@ public class PlayerStats : MonoBehaviour
 {
     
     #region SINGLETON PATTERN
-    public static PlayerStats _instance;
-    public static PlayerStats Instance
+
+    private static PlayerStats _instance;
+
+    public static PlayerStats Instance { get { return _instance; } }
+
+
+    private void Awake()
     {
-        get
+        if (_instance != null && _instance != this)
         {
-            if (_instance == null)
-            {
-                _instance = GameObject.FindObjectOfType<PlayerStats>();
-
-                if (_instance == null)
-                {
-                    GameObject container = new GameObject("Game Manager");
-                    _instance = container.AddComponent<PlayerStats>();
-                }
-            }
-            DontDestroyOnLoad(_instance);
-
-            return _instance;
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            _instance = this;
         }
     }
     #endregion
-    
+
     [SerializeField] private int startMoney = 0;
 
     private int money;

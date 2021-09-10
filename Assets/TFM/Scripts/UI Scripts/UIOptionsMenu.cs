@@ -17,7 +17,7 @@ public class UIOptionsMenu : MonoBehaviour
 
     private void OnVolumenChange(float value)
     {
-        GameManager.Instance.OnVolumenChange((int)value);
+        GameManager.Instance.OnVolumenChange(value);
     }
 
 }

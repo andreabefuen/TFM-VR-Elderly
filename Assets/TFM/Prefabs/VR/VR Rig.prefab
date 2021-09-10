@@ -5097,7 +5097,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.335, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -7309,7 +7309,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1152575680}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1675180324}
+        m_TargetAssemblyTypeName: UIPauseMenu, Assembly-CSharp
+        m_MethodName: OnResetToolClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1251245336
 GameObject:
   m_ObjectHideFlags: 0
@@ -7987,7 +7999,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1282810578}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1675180324}
+        m_TargetAssemblyTypeName: UIPauseMenu, Assembly-CSharp
+        m_MethodName: OnExitButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1412279319
 GameObject:
   m_ObjectHideFlags: 0
@@ -8020,10 +8044,10 @@ RectTransform:
   m_Father: {fileID: 220842567}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.335, y: 0}
-  m_AnchorMax: {x: 0.335, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -11, y: 0}
+  m_SizeDelta: {x: 41.99, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1412279322
 CanvasRenderer:
@@ -8055,7 +8079,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 8480aca91f2f7a9408e8c19655c0f497, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -13080,7 +13104,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1488325212}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1675180324}
+        m_TargetAssemblyTypeName: UIPauseMenu, Assembly-CSharp
+        m_MethodName: OnPrincipalMenuPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1594560672
 GameObject:
   m_ObjectHideFlags: 0
@@ -13649,6 +13685,67 @@ MonoBehaviour:
   m_SnapThresholdDistance: 10
   m_Reticle: {fileID: 0}
   m_StopLineAtFirstRaycastHit: 1
+--- !u!1 &1675180322
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1675180323}
+  - component: {fileID: 1675180325}
+  - component: {fileID: 1675180324}
+  m_Layer: 0
+  m_Name: PauseMenu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1675180323
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675180322}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.232, z: 0.521}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8661728536964966284}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1675180325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675180322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d27723b4e74a4ec49b936cc27fd2ae01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuButtonPressed:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1675180324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675180322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39d9b523685185444a50b8c07c3c72d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuCanvasObject: {fileID: 495457538}
+  menuButtonWatcher: {fileID: 1675180325}
 --- !u!1 &1752240456
 GameObject:
   m_ObjectHideFlags: 0
@@ -14570,6 +14667,7 @@ Transform:
   m_Children:
   - {fileID: 8661728535269253313}
   - {fileID: 495457542}
+  - {fileID: 1675180323}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14769,15 +14867,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95cf7af5109035f4782d998230694009, type: 3}
---- !u!4 &1448352408976792279 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7794940277074904864, guid: 95cf7af5109035f4782d998230694009,
-    type: 3}
-  m_PrefabInstance: {fileID: 8661728536967241207}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1448352408976792277 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7794940277074904866, guid: 95cf7af5109035f4782d998230694009,
+    type: 3}
+  m_PrefabInstance: {fileID: 8661728536967241207}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1448352408976792279 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7794940277074904864, guid: 95cf7af5109035f4782d998230694009,
     type: 3}
   m_PrefabInstance: {fileID: 8661728536967241207}
   m_PrefabAsset: {fileID: 0}

@@ -9,13 +9,13 @@ public class AudioGameManager : MonoBehaviour
 
     AudioSource audioSource;
 
-    private void Awake()
+    private void Start()
     {
         audioSource = GetComponent<AudioSource>();
         PlayGeneralAudio();
     }
 
-    public void ChangeVolumen(int volumenValue)
+    public void ChangeVolumen(float volumenValue)
     {
         audioSource.volume = volumenValue / 10;
     }
@@ -23,6 +23,7 @@ public class AudioGameManager : MonoBehaviour
 
     public void PlayGeneralAudio()
     {
+        if (audioSource.clip == generalAudio) return;
         audioSource.clip = generalAudio;
         audioSource.loop = true;
 

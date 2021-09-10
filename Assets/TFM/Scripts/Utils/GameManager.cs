@@ -10,27 +10,25 @@ public class GameManager : MonoBehaviour
     public TMP_Text channelIDText;
 
     #region SINGLETON PATTERN
-    public static GameManager _instance;
-    public static GameManager Instance
+    private static GameManager _instance;
+
+    public static GameManager Instance { get { return _instance; } }
+
+
+    private void Awake()
     {
-        get
+        if (_instance != null && _instance != this)
         {
-            if (_instance == null)
-            {
-                _instance = GameObject.FindObjectOfType<GameManager>();
-
-                if (_instance == null)
-                {
-                    GameObject container = new GameObject("Game Manager");
-                    _instance = container.AddComponent<GameManager>();
-                }
-            }
-            DontDestroyOnLoad(_instance);
-
-            return _instance;
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            _instance = this;
+            DontDestroyOnLoad(this.gameObject);
         }
     }
     #endregion
+
 
     public void OnExitClickButton()
     {
@@ -47,6 +45,11 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
+    public void OnPrincipalMenuButtonClicked()
+    {
+        SceneManager.LoadScene(0);
+    }
+
     public void ChangeChannelID(string channelIDString)
     {
         if(channelIDText != null)
@@ -55,7 +58,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void OnVolumenChange(int value)
+    public void OnVolumenChange(float value)
     {
         GetComponent<AudioGameManager>().ChangeVolumen(value);
     }

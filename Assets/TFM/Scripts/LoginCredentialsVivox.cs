@@ -31,7 +31,7 @@ public class LoginCredentialsVivox : MonoBehaviour
         client = new Client();
         client.Uninitialize();
         client.Initialize();
-        DontDestroyOnLoad(this);
+        //DontDestroyOnLoad(this);
 
         channelName = CreateRandomString(4);
 
