@@ -22,14 +22,15 @@ public class GoToNextZone : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
-            panelCanvas.gameObject.SetActive(true);
+            LoadScene();
+            //panelCanvas.gameObject.SetActive(true);
         }
     }
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-            panelCanvas.gameObject.SetActive(false);
+            //panelCanvas.gameObject.SetActive(false);
 
         }
     }

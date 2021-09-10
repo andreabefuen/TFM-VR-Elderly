@@ -32,8 +32,13 @@ public class LoginCredentialsVivox : MonoBehaviour
         client.Uninitialize();
         client.Initialize();
         DontDestroyOnLoad(this);
-        
+
+        channelName = CreateRandomString(4);
+
+
         StartCoroutine("Initialize");
+
+        this.GetComponent<GameManager>().ChangeChannelID(channelName);
     }
 
     IEnumerator Initialize()
@@ -207,4 +212,18 @@ public class LoginCredentialsVivox : MonoBehaviour
     }
 
     #endregion
+
+    private string CreateRandomString(int stringLength = 10)
+    {
+        int _stringLength = stringLength - 1;
+        string randomString = "";
+        string[] characters = new string[] { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" };
+        for (int i = 0; i <= _stringLength; i++)
+        {
+            randomString = randomString + characters[UnityEngine.Random.Range(0, characters.Length)];
+        }
+        Debug.Log(randomString);
+        return randomString;
+        
+    }
 }

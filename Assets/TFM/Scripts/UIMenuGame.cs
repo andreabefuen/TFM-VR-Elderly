@@ -12,6 +12,14 @@ public class UIMenuGame : MonoBehaviour
     public MenuButtonWatcher menuButtonWatcher;
 
     bool isPressed = false;
+
+    private void Awake()
+    {
+        if(menuCanvasObject == null)
+        {
+            menuCanvasObject = GameObject.Find("PauseMenuCanvas");
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {

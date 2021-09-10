@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class GameManager : MonoBehaviour
 {
+    public TMP_Text channelIDText;
 
     #region SINGLETON PATTERN
     public static GameManager _instance;
@@ -44,4 +46,18 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+
+    public void ChangeChannelID(string channelIDString)
+    {
+        if(channelIDText != null)
+        {
+            channelIDText.text = "Channel ID: " + channelIDString;
+        }
+    }
+
+    public void OnVolumenChange(int value)
+    {
+        GetComponent<AudioGameManager>().ChangeVolumen(value);
+    }
+
 }
