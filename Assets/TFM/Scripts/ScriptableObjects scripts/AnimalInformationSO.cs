@@ -28,6 +28,7 @@ public class AnimalInformationSO : ScriptableObject
     public delegate void OnPetValueChange();
     public OnPetValueChange onPetValueChange;
 
+
     public void FeedAnimal(int value)
     {
         currentFeed += value;
@@ -48,6 +49,10 @@ public class AnimalInformationSO : ScriptableObject
         }
         onPetValueChange?.Invoke();
     }
+
+    public void SetCurrentValueFeed(int value) { if (currentFeed != 0) { currentFeed -= value;  } onFeedValueChange?.Invoke(); }
+
+    public void SetCurrentValueLove(int value) { currentLove -= value; onPetValueChange?.Invoke(); }
 
     public int GetCurrentValueFeed(){return currentFeed;}
 

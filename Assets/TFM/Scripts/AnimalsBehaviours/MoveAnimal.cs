@@ -15,11 +15,28 @@ public class MoveAnimal : MonoBehaviour
         navMeshAgent = GetComponent<NavMeshAgent>();
         //StartCoroutine(MoveIfHungry());
         //StartCoroutine(MoveRandomly());
+        AddListeners();
+
         StartCoroutine(MoveIfHungryNavmesh());
         StartCoroutine(MoveRandomlyNavmesh());
 
     }
 
+    void AddListeners()
+    {
+        animalBehaviour.animal.onPetValueChange += MoveHungry;
+
+    }
+
+
+    void MoveHungry()
+    {
+
+            StartCoroutine(MoveIfHungryNavmesh());
+            Debug.Log("HUGADSOGHASOG");
+        
+
+    }
     // Update is called once per frame
     void Update()
     {

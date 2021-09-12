@@ -18,6 +18,9 @@ public class PickupItem : MonoBehaviour
     public delegate void PickItem();
     public event PickItem pickedItem;
 
+    [HideInInspector]
+    public bool canBePicked = true;
+
     private void Awake()
     {
         
@@ -45,7 +48,7 @@ public class PickupItem : MonoBehaviour
         //}
 
         Debug.Log(other.gameObject.name);
-        if (other.gameObject.layer == LayerMask.NameToLayer("PlayerRightHand") && CheckIfActivated(rightRayInteractor))
+        if ( canBePicked &&other.gameObject.layer == LayerMask.NameToLayer("PlayerRightHand") && CheckIfActivated(rightRayInteractor))
         {
             AddToInventoryAndDestroyThis();
         }

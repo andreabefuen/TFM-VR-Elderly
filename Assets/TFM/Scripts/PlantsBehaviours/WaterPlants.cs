@@ -24,6 +24,7 @@ public class WaterPlants : CollisionBehaviour
         foreach (var item in pickableItems)
         {
             item.pickedItem += OneLess;
+            item.canBePicked = false;
         }
     }
 
@@ -36,6 +37,14 @@ public class WaterPlants : CollisionBehaviour
         GameFlowManager.Instance.SaveCurrentTimeCrop(crop);
     }
 
+    void ItemsCanBePicked()
+    {
+        foreach (var item in pickableItems)
+        {
+            item.canBePicked = true;
+        }
+    }
+
     public override void OnCollisionEnter(Collision collider)
     {
         if (!GetIfPossibleWatering())
@@ -45,13 +54,16 @@ public class WaterPlants : CollisionBehaviour
 
         if (collider.gameObject.CompareTag("Watering Can"))
         {
-            if(numPlants == 0)
+            pickableItems = this.GetComponentsInChildren<PickupItem>();
+            numPlants = pickableItems.Length;
+
+            if (numPlants == 0)
             {
                 ResetThisPlant();
             }
             foreach (var item in plantToGrow)
             {
-                item.StartGrowing();
+                if (item.StartGrowing()) ItemsCanBePicked();
 
             }
             Debug.Log("GROW");
@@ -70,7 +82,8 @@ public class WaterPlants : CollisionBehaviour
             }
             foreach (var item in plantToGrow)
             {
-               item.StartGrowing();
+                if (item.StartGrowing()) ItemsCanBePicked();
+               //item.StartGrowing();
 
             }
             Debug.Log("GROW");

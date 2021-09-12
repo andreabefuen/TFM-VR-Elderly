@@ -32,6 +32,7 @@ public class GameFlowManager : MonoBehaviour
         PlayerPrefs.SetString(crop.ToString() + "date", System.DateTime.Now.ToString());
     }
 
+
     public double MinutesPassed()
     {
         var getLastTime = PlayerPrefs.GetString("Date");
@@ -64,6 +65,7 @@ public class GameFlowManager : MonoBehaviour
         Debug.Log("Minutes passed: " + differenceTime.Minutes);
         return differenceTime.Minutes;
     }
+
 }
 
 public enum Crops
@@ -74,3 +76,5 @@ public enum Crops
     Berenjenas, 
     Patatas
 }
+
+

@@ -17,4 +17,4 @@ MonoBehaviour:
   MoveInsteadOfScale: 1
   GrowingParticle: {fileID: 0}
   GrowingSurroundFactor: 1.12
-  GrowingAudio: {fileID: 0}
+  GrowingAudio: {fileID: 11400000, guid: 1dc68646204d4b848a451db58723cc33, type: 2}

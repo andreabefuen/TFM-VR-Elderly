@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a88cb60b9f7da404ebce96b57b5b88d0, type: 3}
+  m_Name: PigAnimalBehaviourSystem 1
+  m_EditorClassIdentifier: 
+  TouchTime: 1
+  LoveParticle: {fileID: 0}
+  AnimalSound: {fileID: 11400000, guid: 93bd9900ddc257b48829285f4c8fd898, type: 2}
+  FeedTime: 1
+  FeedParticle: {fileID: 0}
+  FeedSound: {fileID: 11400000, guid: 722c56f504e22a44ab6146631e8a385b, type: 2}
+  Speed: 2
+  maxDistance: 4
+  minDistance: 3
+  animationPetStringTrigger: test_animation
+  animationFeedStringTrigger: eat_animation
+  animationMovementStringTrigger: walk_animation
+  animationStopStringTrigger: idle_animation
+  onPetAnimal: {fileID: 11400000, guid: c9ba8070307ccc543a194f7146158862, type: 2}
+  onFeedAnimal: {fileID: 11400000, guid: 49909dc7aa88b5c4fbede5b1fd20ccf5, type: 2}
+  onMoveAnimal: {fileID: 11400000, guid: 10539fafa201a8c4ba61a939698f0363, type: 2}

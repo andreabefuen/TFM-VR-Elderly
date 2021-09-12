@@ -75,7 +75,7 @@ public class DefaultAnimalBehaviourSO : AnimalBehaviourSO
     {
         var transform = obj.transform;
         transform.LookAt(goalTransform);
-        onMoveAnimal?.Raise(animationMovementStringTrigger);
+      
 
 
         while (Vector3.Distance(transform.position, goalTransform) >= minDistance)
@@ -89,6 +89,10 @@ public class DefaultAnimalBehaviourSO : AnimalBehaviourSO
                 break;
 
             }
+            else
+            {
+                onMoveAnimal?.Raise(animationMovementStringTrigger);
+            }
             yield return null;
 
         }
@@ -101,7 +105,7 @@ public class DefaultAnimalBehaviourSO : AnimalBehaviourSO
     {
         var transform = obj.transform;
         transform.LookAt(goalTransform.position);
-        onMoveAnimal?.Raise(animationMovementStringTrigger);
+        
 
 
         while (Vector3.Distance(transform.position, goalTransform.position) >= minDistance)
@@ -115,9 +119,14 @@ public class DefaultAnimalBehaviourSO : AnimalBehaviourSO
                 break;
 
             }
-            yield return null;
+            else
+            {
+                onMoveAnimal?.Raise(animationMovementStringTrigger);
+            }
+           
 
         }
+        yield return null;
 
     }
     public override IEnumerator MovementNavmeshCoroutine(MonoBehaviour obj, Transform goalTransform)
@@ -161,29 +170,25 @@ public class DefaultAnimalBehaviourSO : AnimalBehaviourSO
         NavMeshAgent navMesh = obj.GetComponent<NavMeshAgent>();
         navMesh.SetDestination(goal);
 
-        if (navMesh.remainingDistance <= 3)
-        {
-            onMoveAnimal?.Raise(animationStopStringTrigger);
-            navMesh.isStopped = true;
-            yield return null;
-        }
-        else
-        {
+       // if (navMesh.remainingDistance <= 3)
+       // {
+       //     onMoveAnimal?.Raise(animationStopStringTrigger);
+       //     navMesh.isStopped = true;
+       //     yield return null;
+       // }
+       // else
+       // {
             navMesh.isStopped = false;
 
             Debug.Log("hofjdahsgjldsag");
             onMoveAnimal?.Raise(animationMovementStringTrigger);
 
-            while (navMesh.remainingDistance > 3)
-            {
-                //transform.LookAt(Vector3.forward *-1);
-                yield return null;
-            }
+            yield return new WaitUntil(() => navMesh.remainingDistance <= 3);
             onMoveAnimal?.Raise(animationStopStringTrigger);
             navMesh.isStopped = true;
             //yield return new WaitUntil(() => navMesh.remainingDistance < 1);
 
-        }
+       // }
 
     }
 

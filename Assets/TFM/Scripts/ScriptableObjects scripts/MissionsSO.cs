@@ -31,9 +31,6 @@ namespace TFM.ScriptableObjects
             isAccepted = true;
             
         }
-
-            
-
         public ItemSO ItemNeeded()
         {
             if(missionType != MissionType.bringItem)

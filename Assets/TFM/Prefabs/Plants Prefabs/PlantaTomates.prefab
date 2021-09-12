@@ -719,7 +719,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4286058605f34164e84d1ec7d1164b3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crop: 0
+  crop: 2
   minutesPassed: 10
   plantToGrow: []
   numPlants: 0

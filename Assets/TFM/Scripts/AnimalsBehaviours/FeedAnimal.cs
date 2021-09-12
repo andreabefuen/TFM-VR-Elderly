@@ -8,6 +8,11 @@ public class FeedAnimal : CollisionBehaviour
     public string nameTagToCompare;
 
 
+    private void Awake()
+    {
+        InvokeRepeating("GetMoreHungry", 10, 10);
+    }
+
     public void FeedAnimalBehaviour(int currentValue)
     {
         //Love += love;
@@ -36,5 +41,11 @@ public class FeedAnimal : CollisionBehaviour
             FeedAnimalBehaviour(foodInfo != null ? foodInfo.foodValue : 1);
             Debug.Log("FEED");
         }
+    }
+
+    public void GetMoreHungry()
+    {
+        var animalInformation = GetComponent<AnimalBehaviour>().animal;
+        animalInformation.SetCurrentValueFeed(1);
     }
 }

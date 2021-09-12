@@ -17,12 +17,22 @@ public class GrowingBehaviour : MonoBehaviour
         //InvokeRepeating("StartGrowing", 10, stages);
         //StartGrowing();
     }
-    public void StartGrowing()
+    public bool StartGrowing()
     {
-        if(plantCoroutine == null)
+        if(currentStage < stages)
         {
-            StartCoroutine(GrowingCoroutine());
+            if (plantCoroutine == null)
+            {
+                StartCoroutine(GrowingCoroutine());
+
+            }
+            return false;
         }
+        else
+        {
+            return true;
+        }
+   
         
     }
 
@@ -35,6 +45,10 @@ public class GrowingBehaviour : MonoBehaviour
             yield return plantCoroutine;
             currentStage++;
             plantCoroutine = null;
+        }
+        else
+        {
+            Debug.Log("YA ha crecido del todo");
         }
     }
 
