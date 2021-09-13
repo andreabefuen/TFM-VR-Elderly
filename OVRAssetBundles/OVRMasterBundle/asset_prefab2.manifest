@@ -1,0 +1,131 @@
+ManifestFileVersion: 0
+CRC: 2475836407
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 33a21c5bd26752544f19cc3e0749f6f9
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4ac72da2bce56e3faa8e2ef7c115b923
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d7b1877fbcee4384391bb93c4ef39976, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4286058605f34164e84d1ec7d1164b3b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 040c649a4e986a64987706ea3ae312de, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0c919cfc5fbdf8e4aa177d697aa2cc48, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 00f1931b434d5f047ade049baae0c932, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fb155b76c66c8c74fae10b0bc955e781, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 12f3a230f4bdcdf42ba412ccf9989886, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0b22cfa99be3afe49bdea8f88123209a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 136bd69c0edd803458396fd86b2ef7d2, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a3aa426c7f2ef5649b9c27b47f5ced46, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 135
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+- Class: 205
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 223
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/TFM/Prefabs/UI Prefabs/MissionSlot.prefab
+- Assets/PrefabsExport_PolygonFantasy/Zones/Delivery Box.prefab
+- Assets/Other Assets/PolygonNature/Prefabs/Terrain/SM_Terrain_GrassEdge_04.prefab
+- Assets/Other Assets/PolygonNature/Prefabs/Trees/SM_Tree_Dead_02.prefab
+- Assets/PrefabsExport_PolygonFarm/Barn Building.prefab
+- Assets/PolygonFantasyKingdom/Prefabs/Items/SM_Item_Jar_01.prefab
+- Assets/PolygonFantasyKingdom/Prefabs/Items/SM_Item_Jar_03.prefab
+- Assets/TFM/Prefabs/Rock Resource.prefab
+- Assets/Other Assets/PolygonNature/Prefabs/Props/SM_Prop_Pillar_01.prefab
+- Assets/Other Assets/PolygonNature/Prefabs/Trees/SM_Tree_Pine_01.prefab
+- Assets/PolygonFantasyKingdom/Prefabs/House/SM_Bld_House_Wall_02.prefab
+- Assets/PolygonFantasyKingdom/Prefabs/House/SM_Bld_House_Roof_Tile_Half_02.prefab
+- Assets/Other Assets/PolygonNature/FX/FX_Prefabs/Fire_FX.prefab
+- Assets/PolygonFantasyKingdom/Prefabs/House/SM_Bld_House_Floor_Wood_02.prefab
+- Assets/PolygonFantasyKingdom/Prefabs/House/SM_Bld_House_Wall_WindowBox_03.prefab
+- Assets/Other Assets/PolygonNature/Prefabs/Props/SM_Prop_Bridge_Curved_01.prefab
+- Assets/TFM/Prefabs/Plants Prefabs/BerenjenaPrefab.prefab
+- Assets/PolygonFantasyKingdom/Prefabs/Props/Furniture/SM_Prop_Bed_03.prefab
+- Assets/Other Assets/PolygonNature/Prefabs/Terrain/MountainSkybox.prefab
+- Assets/TFM/Prefabs/Tools Prefabs/Animal Food.prefab
+- Assets/TFM/Prefabs/Plants Prefabs/PlantaSetas.prefab
+- Assets/Other Assets/PolygonNature/Prefabs/Props/SM_Prop_Fence_01.prefab
+- Assets/Other Assets/PolygonNature/Prefabs/Terrain/SM_Terrain_Rubble_Pebbles_02.prefab
+- Assets/TFM/Prefabs/Plants Prefabs/TomatePrefab.prefab
+- Assets/TFM/Prefabs/Zones/Farm.prefab
+- Assets/Other Assets/PolygonNature/Prefabs/Trees/SM_Tree_Pine_Large_01.prefab
+- Assets/PolygonFantasyKingdom/Prefabs/Items/SM_Item_Jar_05.prefab
+- Assets/PolygonFantasyKingdom/Prefabs/Props/SM_Prop_Garlic_Rope_01.prefab
+- Assets/Other Assets/PolygonNature/Prefabs/Trees/SM_Tree_Pine_Large_02.prefab
+- Assets/TFM/Prefabs/Tools Prefabs/WateringCan.prefab
+Dependencies:
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_asset0
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_asset1
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_fbx0
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_fbx1
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_fbx2
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_fbx3
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_mat0
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_mat1
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_png0
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_png1
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_prefab1
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_prefab3
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_resources

@@ -1,0 +1,59 @@
+ManifestFileVersion: 0
+CRC: 4239124927
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 331d1e0a13890b47997ff4897ca0f73e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 939e20ecac0e95a3f7c5cfb3e57acb1d
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/PolygonTown/Materials/PolygonTown_01_A.mat
+- Assets/Other Assets/PolygonNature/Materials/Misc/PolygonNature_Birch_Trunk.mat
+- Assets/TFM/Shaders/Shader Graphs_Color Ramp.mat
+- Assets/Other Assets/PolygonNature/Materials/PolygonNature_Tree_TrunkDead.mat
+- Assets/Stylized Water For URP/Materials/Windwaker.mat
+- Assets/PolygonFantasyKingdom/Materials/Misc/PolygonFantasyKingdom_Mat_Glass.mat
+- Assets/PolygonTown/Materials/PolygonTown_04_A.mat
+- Assets/TFM/Materials/Reticle Base.mat
+- Assets/PolygonTown/Materials/Misc/Window_Glass_Opaque.mat
+- Assets/Models/VR Controllers Models/Oculus Controllers/oculus_cv1_controller_right/Materials/external_controller01_col.mat
+- Assets/Other Assets/PolygonNature/FX/FX_Materials/Material_FX.mat
+- Assets/Other Assets/PolygonNature/Materials/LODS/PolygonNature_Leaves_Base_LOD_01.mat
+- Assets/TFM/Shaders/Shader Graphs_Dotted Line_Tutorial.mat
+- Assets/Other Assets/PolygonNature/Models/Materials/Leave.mat
+- Assets/PolygonFarm/Materials/PolygonFarm_01_A.mat
+- Assets/PolygonFantasyKingdom/Materials/Alts/PolygonFantasyKingdom_Mat_04_B.mat
+- Assets/Models/VR Controllers Models/Valve Index Controllers/valve-index-controller-right/source/Valve
+  Index Mat Right.mat
+- Assets/Other Assets/PolygonNature/Materials/LODS/PolygonNature_Leaves_Pine_LOD_01.mat
+- Assets/PolygonFantasyKingdom/Materials/Alts/PolygonFantasyKingdom_Mat_01_C.mat
+- Assets/PolygonTown/Materials/Alternates/PolygonTown_03_B.mat
+- Assets/Other Assets/PolygonNature/Models/Materials/Trunk.mat
+- Assets/TFM/Materials/Axe Material.mat
+- Assets/Other Assets/PolygonNature/Materials/PolygonNature_Tree_Trunk.mat
+- Assets/Models/VR Controllers Models/Oculus Controllers/oculus_cv1_controller_left/Materials/external_controller01_col.mat
+- Assets/Models/VR Controllers Models/Oculus Controllers/oculus_rifts_controller_right/Materials/right_diff.mat
+- Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat
+- Assets/Models/VR Controllers Models/Vive Controllers/Materials/Vive Controller.mat
+- Assets/PolygonFantasyKingdom/Materials/Alts/PolygonFantasyKingdom_Mat_03_B.mat
+- Assets/Oculus Hands/Materials/Hands_solid.mat
+- Assets/PolygonFantasyKingdom/Materials/PolygonFantasyKingdom_Mat_01_A.mat
+Dependencies:
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_jpg0
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_png0
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_png1
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_png2
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_psd0
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_shader0
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_shadergraph0
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_tga0

@@ -1,0 +1,126 @@
+ManifestFileVersion: 0
+CRC: 1247685609
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 305d303d6416ccdcd34cf4e973933e23
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4134ff9f45e5ab8f62b0f0c127650dc5
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4eec9d117ebb9c74d8963b1db835a2cd, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 38dd3255ab0f8f641a4c4e5592a5dd39, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3921dd97473ffa74fa6bf02b571e1f87, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ef2803225bb4c7747b694745477d797e, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 240328cdec5aa4d408bb9541fb310d22, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e86422fc8b3b05e469d537c77d62eccc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d54b35af3a2013d468d0f0037ae2b14f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 73518621e4c8cc3448e73ce67e38b377, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 135
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 195
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 223
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/PolygonFarm/Prefabs/Environments/SM_Env_Road_Dirt_Corner_02.prefab
+- Assets/PolygonFarm/Prefabs/Generic/SM_Generic_Ground_02.prefab
+- Assets/PolygonFarm/Prefabs/Environments/SM_Env_Road_Dirt_Intersection_01.prefab
+- Assets/PrefabsExport_PolygonFantasy/Characters/Character_Campesina.prefab
+- Assets/PrefabsExport_PolygonFantasy/Characters/Character_Daughter_01.prefab
+- Assets/PolygonTown/Prefabs/Props/SM_Prop_Church_Stand_01.prefab
+- Assets/Other Assets/PolygonNature/Prefabs/Rocks/SM_Rock_Tile_01.prefab
+- Assets/PrefabsExport_PolygonFantasy/Zones/Church.prefab
+- Assets/PolygonFarm/Prefabs/Environments/SM_Env_Road_Dirt_T_Section_01.prefab
+- Assets/PolygonFantasyKingdom/Prefabs/Characters/SM_Chr_Priest_01.prefab
+- Assets/PolygonFarm/Prefabs/Environments/SM_Env_Road_Dirt_Swerve_01.prefab
+- Assets/TFM/Prefabs/Characters/Campesina.prefab
+- Assets/PrefabsExport_PolygonFantasy/Characters/Character_Monja.prefab
+- Assets/PolygonFarm/Prefabs/Buildings/SM_Bld_Farmhouse_02.prefab
+- Assets/PolygonFarm/Prefabs/Environments/SM_Env_Road_Dirt_Swerve_02.prefab
+- Assets/PolygonFarm/Prefabs/Environments/SM_Env_Road_Dirt_End_02.prefab
+- Assets/PrefabsExport_PolygonFantasy/Characters/Character_Monk.prefab
+- Assets/Other Assets/PolygonNature/Prefabs/Rocks/SM_Rock_Cluster_Large_04.prefab
+- Assets/Other Assets/PolygonNature/Prefabs/Rocks/SM_Rock_Cluster_Large_03.prefab
+- Assets/Other Assets/PolygonNature/Prefabs/Rocks/SM_Rock_Cluster_Large_02.prefab
+- Assets/PolygonFarm/Prefabs/Environments/SM_Env_Road_Dirt_Straight_01.prefab
+- Assets/PolygonTown/Prefabs/Props/SM_Prop_Church_Pew_01.prefab
+- Assets/Other Assets/PolygonNature/Prefabs/Rocks/SM_Rock_Pile_Curved_01.prefab
+- Assets/Epic Toon FX/Prefabs/Misc/TypingMessage.prefab
+- Assets/TFM/Prefabs/Characters/Campesino.prefab
+- Assets/PrefabsExport_PolygonFantasy/Characters/Character_Campesino.prefab
+- Assets/PolygonFarm/Prefabs/Environments/SM_Env_Road_Dirt_End_01.prefab
+- Assets/Other Assets/PolygonNature/Prefabs/Rocks/SM_Rock_Cluster_Large_01.prefab
+- Assets/PolygonFarm/Prefabs/Generic/SM_Generic_Ground_03.prefab
+Dependencies:
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_asset1
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_asset2
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_controller0
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_fbx3
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_fbx4
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_mat0
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_mat1
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_mat2
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_png0
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_png1
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_png2
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_prefab3
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_resources

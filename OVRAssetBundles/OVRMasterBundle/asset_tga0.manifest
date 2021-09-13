@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 2209721637
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b7ee287ee44998a1a2c0f4e8b3d52ae0
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b0363f7088f9761414f730641bf9a24b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Other Assets/Suriyun/UnityChanShader/Texture/FO_CLOTH1.tga
+- Assets/Models/VR Controllers Models/Vive Controllers/Textures/onepointfive_occ_bake.tga
+- Assets/PolygonFarm/Textures/PolygonFarm_Texture_Metallic.tga
+- Assets/Other Assets/Suriyun/UnityChanShader/Texture/FO_SKIN1.tga
+- Assets/PolygonTown/Textures/Misc/PolygonTown_Texture_Metallic.tga
+- Assets/Other Assets/PolygonNature/Textures/Misc/Noise_Big.tga
+Dependencies: []

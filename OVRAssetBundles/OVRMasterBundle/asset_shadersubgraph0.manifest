@@ -1,0 +1,28 @@
+ManifestFileVersion: 0
+CRC: 2356984940
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 36bdb8aca6c30495a6bd11deecc69a5c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 31d6cfe0d16ae931b73c59d7e0c089c0
+HashAppended: 0
+ClassTypes: []
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Stylized Water For URP/Shaders/Libraries/Color/Shore Color.shadersubgraph
+- Assets/Stylized Water For URP/Shaders/Libraries/Waves/Waves.shadersubgraph
+- Assets/Stylized Water For URP/Shaders/Libraries/Other/Vertex Channel.shadersubgraph
+- Assets/Stylized Water For URP/Shaders/Libraries/Surface and Lighting/Fog.shadersubgraph
+- Assets/Stylized Water For URP/Shaders/Libraries/Foam/Mobile Intersection Foam.shadersubgraph
+- Assets/Stylized Water For URP/Shaders/Libraries/Depth/Depth Fade.shadersubgraph
+- Assets/Stylized Water For URP/Shaders/Libraries/Depth/Scene Position.shadersubgraph
+- Assets/Stylized Water For URP/Shaders/Libraries/Color/Horizon Color.shadersubgraph
+- Assets/Stylized Water For URP/Shaders/Libraries/Depth/Perspective Divide.shadersubgraph
+- Assets/Stylized Water For URP/Shaders/Libraries/UV/Water UV.shadersubgraph
+- Assets/Stylized Water For URP/Shaders/Libraries/Foam/Mobile Surface Foam.shadersubgraph
+- Assets/Stylized Water For URP/Shaders/Libraries/UV/Mobile Refract UV.shadersubgraph
+- Assets/Stylized Water For URP/Shaders/Libraries/Depth/Mobile Depth Fade.shadersubgraph
+- Assets/Stylized Water For URP/Shaders/Libraries/Other/Overlay.shadersubgraph
+Dependencies: []

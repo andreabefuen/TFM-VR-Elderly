@@ -1,0 +1,57 @@
+ManifestFileVersion: 0
+CRC: 3481939358
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: fb1ba2a0aed3029f2b8d744d7d300ff6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 939e20ecac0e95a3f7c5cfb3e57acb1d
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Other Assets/PolygonNature/Materials/Water/PolygonNature_Water.mat
+- Assets/TFM/Materials/Yellow Material.mat
+- Assets/Epic Toon FX/Materials/Geometric/circle.mat
+- Assets/Cartoon_Farm_Crops/Materials/Eggplant_Fruit.mat
+- Assets/Other Assets/Suriyun/Cute Pet/Materials/Dog_A.mat
+- Assets/Other Assets/Suriyun/Cute Pet/Materials/Dog_A_URP.mat
+- Assets/PolygonFantasyKingdom/Materials/Ground_Mat/Grass mat.mat
+- Assets/Epic Toon FX/Materials/Misc/talkbubble.mat
+- Assets/Other Assets/PolygonNature/Materials/PolygonNature_Plants.mat
+- Assets/PolygonTown/Materials/Misc/Window_Glass.mat
+- Assets/Cartoon_Farm_Crops/Materials/Tomato_Plant.mat
+- Assets/PolygonTown/Materials/Misc/Veh_Glass.mat
+- Assets/Other Assets/Suriyun/Cute Pet/Materials/Pig_A_URP.mat
+- Assets/Other Assets/PolygonNature/Materials/Misc/PolygonNature_MountainSkybox_Snow.mat
+- Assets/Materials/Skybox_Mat.mat
+- Assets/Other Assets/Suriyun/Cute Pet/Materials/Cow_A_URP.mat
+- Assets/Cartoon_Farm_Crops/Materials/Eggplant_Plant.mat
+- Assets/Other Assets/Suriyun/Cute Pet/Materials/Pig_A.mat
+- Assets/Epic Toon FX/Materials/Clouds/cloud_2x2_hard.mat
+- Assets/Other Assets/PolygonNature/Materials/PolygonNature_01.mat
+- Assets/Other Assets/PolygonNature/Materials/Leaves/PolygonNature_Leaves_Pine.mat
+- Assets/Other Assets/PolygonNature/Materials/Leaves/PolygonNature_Leaves_Base.mat
+- Assets/Other Assets/PolygonNature/Materials/LODS/PolygonNature_Tree_Dead_Trunk_LOD_01.mat
+- Assets/Wood Sign Models/Materials/wood_signs_texture.mat
+- Assets/Other Assets/PolygonNature/Models/Materials/Leaves_Dead.mat
+- Assets/PolygonFantasyKingdom/Materials/Ground_Mat/PolygonFantasyKingdom_Mat_Ground_Mud_01.mat
+- Assets/Other Assets/Suriyun/Cute Pet/Materials/Cow_A.mat
+- Assets/Other Assets/PolygonNature/Materials/Misc/PolygonNature_Tree_Dead.mat
+- Assets/Other Assets/PolygonNature/Materials/PolygonNature_Tree.mat
+- Assets/Cartoon_Farm_Crops/Materials/Tomato_Fruit.mat
+Dependencies:
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_jpg0
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_png0
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_png1
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_png2
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_shader0
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_shadergraph0
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_tga0

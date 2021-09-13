@@ -1,0 +1,69 @@
+ManifestFileVersion: 0
+CRC: 591929019
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d13cdef2ebb270f80b4a3bc3c2f12733
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 317920cb0e26af913dfcf6c0b10ef1c2
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Other Assets/Suriyun/Animations_Cute_Animals/TypeA/Animal_TypeA@Run.fbx
+- Assets/PolygonFantasyKingdom/Models/SM_Bld_House_Wall_Door_01.fbx
+- Assets/Other Assets/PolygonNature/Models/LODS/SM_Tree_Dead_02_LOD_01.fbx
+- Assets/Other Assets/PolygonNature/Models/SM_Tree_Pine_Large_02.fbx
+- Assets/Other Assets/PolygonNature/Models/SM_Tree_Pine_Small_02.fbx
+- Assets/Other Assets/PolygonNature/Models/SM_Prop_CampFire_01.fbx
+- Assets/PolygonFarm/Models/SM_Bld_Barn_03.fbx
+- Assets/TFM/Models/HouseProps_Models/tableCross.fbx
+- Assets/Other Assets/Suriyun/Animations_Cute_Animals/TypeA/Animal_TypeA@Attack.fbx
+- Assets/Other Assets/PolygonNature/Models/LODS/SM_Tree_Pine_Large_02_LOD_01.fbx
+- Assets/PolygonFantasyKingdom/Models/SM_Prop_Table_Wood_06.fbx
+- Assets/PolygonFarm/Models/SM_Prop_GrainBag_Open_02.fbx
+- Assets/Other Assets/PolygonNature/Models/SM_Tree_Generic_01.fbx
+- Assets/PolygonFantasyKingdom/Models/SM_Bld_House_Wall_01.fbx
+- Assets/Other Assets/Suriyun/Animations_Cute_Animals/TypeA/Animal_TypeA@Damage.fbx
+- Assets/Other Assets/PolygonNature/Models/SM_Prop_TorchStick_01.fbx
+- Assets/Other Assets/PolygonNature/Models/SM_Prop_Pillar_Arch_01.fbx
+- Assets/PolygonFantasyKingdom/Models/SM_Bld_House_Roof_Tile_Peak_Cap_Edge_01.fbx
+- Assets/Other Assets/Suriyun/Cute Pet/FBX/TypeA/Cow.fbx
+- Assets/PolygonFantasyKingdom/Models/SM_Item_Jar_03.fbx
+- Assets/PolygonFantasyKingdom/Models/SM_Bld_House_Roof_Tile_Edge_End_01.fbx
+- Assets/PolygonFantasyKingdom/Models/SM_Bld_House_Roof_Tile_End_01.fbx
+- Assets/PolygonFantasyKingdom/Models/SM_Item_Watering_Can_01.fbx
+- Assets/PolygonFantasyKingdom/Models/SM_Bld_House_Roof_Tile_Peak_Cap_01.fbx
+- Assets/PolygonTown/Models/Buildings/SM_Bld_House_Preset_01.fbx
+- Assets/Other Assets/PolygonNature/Models/SM_Tree_Dead_01.fbx
+- Assets/Other Assets/Suriyun/Animations_Cute_Animals/TypeA/Animal_TypeA@Jump.fbx
+- Assets/PolygonFantasyKingdom/Models/SM_Prop_Garlic_Rope_01.fbx
+- Assets/Wood Sign Models/FBX/Sign12.fbx
+- Assets/Other Assets/PolygonNature/Models/SM_Terrain_GrassEdge_04.fbx
+Dependencies:
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_mat0
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_mat1
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_shader0

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef2803225bb4c7747b694745477d797e, type: 3}
+  m_Name: JovenChicaBehaviour
+  m_EditorClassIdentifier: 
+  personTalkingAudio: {fileID: 11400000, guid: 85db30b2629067a49b6c5962f2a91f63, type: 2}
+  animationMovementTrigger: Walk
+  animationIdleTrigger: Idle
+  animationGreetTrigger: Greet
+  onMoveCharacter: {fileID: 11400000, guid: 01488428d7b161b4cbfb28604c1a006e, type: 2}

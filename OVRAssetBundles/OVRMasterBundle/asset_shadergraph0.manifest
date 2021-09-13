@@ -1,0 +1,30 @@
+ManifestFileVersion: 0
+CRC: 810595798
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c3c8857b71f2e41eb1a7d3d5232c368c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: d533060b0dd015677709cb9fe1195f68
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Other Assets/PolygonNature/Shaders/PolygonTrees_LOD.shadergraph
+- Assets/Other Assets/PolygonNature/Shaders/PolygonTrees.shadergraph
+- Assets/Stylized Water For URP/Shaders/Stylized Water Mobile.shadergraph
+- Assets/TFM/Shaders/Color Ramp.shadergraph
+- Assets/TFM/Shaders/Dotted Line_Tutorial.shadergraph
+- Assets/Other Assets/PolygonNature/Shaders/PolygonNatureWater.shadergraph
+Dependencies:
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_jpg0
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_png0
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_png1
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_png2
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_shader0
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_shadersubgraph0

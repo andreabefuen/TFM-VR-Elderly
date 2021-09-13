@@ -20,4 +20,4 @@ MonoBehaviour:
   moneyReward: 100
   itemReward: {fileID: 11400000, guid: d1571e77d6a55b042a57e822da0a23a4, type: 2}
   isCompleted: 0
-  isAccepted: 1
+  isAccepted: 0

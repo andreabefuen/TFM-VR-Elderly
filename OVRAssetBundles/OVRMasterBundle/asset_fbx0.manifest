@@ -1,0 +1,65 @@
+ManifestFileVersion: 0
+CRC: 3556251124
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8b173bf7940753dbce42de89d90c8792
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: cefa3633532e44853c9e1006ac52d2ee
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Oculus Hands/Animations/r_hand_fist_anim.fbx
+- Assets/PolygonTown/Models/Props/SM_Prop_StreetSign_Pole_01.fbx
+- Assets/PolygonFantasyKingdom/Models/SM_Prop_Mirror_03.fbx
+- Assets/PolygonFantasyKingdom/Models/SM_Prop_Chair_Wood_04.fbx
+- Assets/PolygonFantasyKingdom/Models/SM_Bld_House_Roof_Tile_Window_03.fbx
+- Assets/PolygonTown/Models/Environment/SM_Env_Gardenbox_Double_01.fbx
+- Assets/PolygonFantasyKingdom/Models/SM_Prop_Bed_03.fbx
+- Assets/Other Assets/Suriyun/Animations_Cute_Animals/TypeA/Animal_TypeA@Eat.fbx
+- Assets/PolygonFantasyKingdom/Models/SM_Bld_House_Roof_Tile_Half_02.fbx
+- Assets/PolygonFantasyKingdom/Models/SM_Bld_House_Wall_Cut_02.fbx
+- Assets/Other Assets/PolygonNature/Models/MountainSkybox.fbx
+- Assets/PolygonFantasyKingdom/Models/SM_Prop_Cabinet_04.fbx
+- Assets/Other Assets/PolygonNature/Models/LODS/SM_Tree_Pine_Large_01_LOD_01.fbx
+- Assets/PolygonFantasyKingdom/Models/SM_Prop_Herb_Bunch_01.fbx
+- Assets/Oculus Hands/Models/r_hand_skeletal_lowres.fbx
+- Assets/PolygonFantasyKingdom/Models/SM_Prop_Pumpkin_Plant_01.fbx
+- Assets/Other Assets/PolygonNature/Models/SM_Tree_Birch_04.fbx
+- Assets/PolygonFantasyKingdom/Models/SM_Bld_House_Wall_WindowBox_03.fbx
+- Assets/Other Assets/PolygonNature/Models/SM_Tree_Pine_01.fbx
+- Assets/Oculus Hands/Animations/r_hand_pinch_anim.fbx
+- Assets/PolygonTown/Models/Props/SM_Prop_StreetSign_Arrow_01.fbx
+- Assets/PolygonFantasyKingdom/Models/SM_Item_Pickaxe_01.fbx
+- Assets/Oculus Hands/Animations/l_hand_pinch_anim.fbx
+- Assets/PolygonFantasyKingdom/Models/SM_Bld_House_WoodBeam_01.fbx
+- Assets/Oculus Hands/Animations/l_hand_default_anim.fbx
+- Assets/Other Assets/PolygonNature/Models/LODS/SM_Tree_Generic_01_LOD_01.fbx
+- Assets/Oculus Hands/Animations/r_hand_default_anim.fbx
+- Assets/Oculus Hands/Animations/l_hand_fist_anim.fbx
+- Assets/PolygonFantasyKingdom/Models/SM_Bld_House_Wall_Window_01.fbx
+- Assets/Oculus Hands/Models/l_hand_skeletal_lowres.fbx
+Dependencies:
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_mat0

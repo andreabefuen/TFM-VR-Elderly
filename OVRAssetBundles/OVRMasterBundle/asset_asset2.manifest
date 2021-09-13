@@ -1,0 +1,56 @@
+ManifestFileVersion: 0
+CRC: 963809986
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4dfbdf7667afdf3f4ed16c3229b9bb69
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c5753236956a08a93b6dd0e96cf4f56e
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2d70480308501f543a5df74c5773e433, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d7b1877fbcee4384391bb93c4ef39976, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 98c2b709f86fc0e4aa2140c8c941e25a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ef2803225bb4c7747b694745477d797e, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 240328cdec5aa4d408bb9541fb310d22, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a88cb60b9f7da404ebce96b57b5b88d0, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 73518621e4c8cc3448e73ce67e38b377, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 238
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/TFM/ScriptableObjects/PersonTalking.asset
+- Assets/Scripts/Components/Behaviours/OnCharacterMovesJovenChica.asset
+- Assets/TFM/ScriptableObjects/People/JovenChicaBehaviour.asset
+- Assets/Scripts/Components/Behaviours/OnAnimalMoved.asset
+- Assets/TFM/Scenes/FarmZone/NavMesh.asset
+- Assets/TFM/ScriptableObjects/Missions/Mission 4.asset
+- Assets/TFM/ScriptableObjects/Animals/CerdosSO.asset
+- Assets/TFM/ScriptableObjects/People/CampesinaBehaviour.asset
+- Assets/TFM/ScriptableObjects/Animals/PigAnimalBehaviourSystem 1.asset
+- Assets/TFM/ScriptableObjects/PigSoundEffect.asset
+- Assets/Scripts/Components/Behaviours/OnCharacterMoves.asset
+- Assets/Scripts/Components/Behaviours/OnCharacterMovesCampesino.asset
+- Assets/TFM/ScriptableObjects/People/CampesinoBehaviour.asset
+- Assets/TFM/ScriptableObjects/DogWofAudioSimpleEventExample.asset
+- Assets/TFM/Scenes/CityScene/NavMesh.asset
+- Assets/Scripts/Components/Behaviours/Dog/OnAnimalMovedDog.asset
+- Assets/Scripts/Components/Behaviours/OnAnimalFeeded.asset
+Dependencies:
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_asset1
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_mp30
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_png1

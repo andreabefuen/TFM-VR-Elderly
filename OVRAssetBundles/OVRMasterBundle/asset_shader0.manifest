@@ -1,0 +1,24 @@
+ManifestFileVersion: 0
+CRC: 3774072507
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9474e6c52c46426821ab16123bd9ff6f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 68c985bf88fecc38b460cdb825182138
+HashAppended: 0
+ClassTypes:
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Other Assets/TextMesh Pro/Shaders/TMP_SDF.shader
+- Packages/com.unity.render-pipelines.universal/Shaders/Unlit.shader
+- Assets/Other Assets/Suriyun/UnityChanShader/Shader/Unitychan_chara_hada.shader
+- Assets/Other Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader
+- Packages/com.unity.render-pipelines.universal/Shaders/SimpleLit.shader
+- Packages/com.unity.render-pipelines.universal/Shaders/Utils/FallbackError.shader
+- Packages/com.unity.render-pipelines.universal/Shaders/Lit.shader
+- Packages/com.unity.shadergraph/Editor/Resources/Shaders/FallbackError.shader
+Dependencies: []

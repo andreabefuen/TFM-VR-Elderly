@@ -1,0 +1,48 @@
+ManifestFileVersion: 0
+CRC: 291546059
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 5ab91914160b8549d0871873cc3847a6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4df8c69f2c8a6ad9e3cbf82bb83e4dc3
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Other Assets/PolygonNature/Textures/Masks/Leaves_Pine_MaskTexture.png
+- Assets/Stylized Water For URP/Textures/Foam/Foam 4.png
+- Assets/TFM/Sprites/UI Sprites/UI casual game/mission_list_bg_complete.png
+- Assets/Other Assets/PolygonNature/Textures/Misc/Skybox_Diff.png
+- Assets/Stylized Water For URP/Textures/Normals/Normals 1.png
+- Assets/PolygonTown/Textures/Alternates/PolygonTown_Texture_03_B.png
+- Assets/PolygonTown/Textures/PolygonTown_Texture_04_A.png
+- Assets/TFM/Sprites/UI Sprites/UI casual game/button_purple.png
+- Assets/Stylized Water For URP/Textures/Caustics/Caustics 3.png
+- Assets/PolygonFantasyKingdom/Textures/Alts/PolygonFantasyKingdom_Texture_03_B.png
+- Assets/TFM/Sprites/UI Sprites/PNG/red_boxCross.png
+- Assets/PolygonTown/Textures/Misc/PolygonTown_Texture_Normal_B.png
+- Assets/PolygonFantasyKingdom/Textures/Misc/PolygonFantasyKingdom_Texture_Normal_01.png
+- Assets/Other Assets/PolygonNature/Textures/Misc/Skybox_Normal.png
+- Assets/PolygonTown/Textures/Misc/PolygonTown_Emissive_01.png
+- Assets/Other Assets/Suriyun/Cute Pet/Texture/Cow_A.png
+- Assets/PolygonTown/Textures/Misc/PolygonTown_Window_Normal.png
+- Assets/Stylized Water For URP/Textures/Foam/Foam 5.png
+- Assets/Other Assets/PolygonNature/Textures/PolygonNature_01.png
+- Assets/TFM/Sprites/UI Sprites/Spritesheet/spritesheetIconsPlants.png
+- Assets/TFM/Sprites/UI Sprites/Spritesheet/spritesheetIconsAnimals.png
+- Assets/TFM/Scenes/MainIslandZones/Lightmap-0_comp_dir.png
+- Assets/PolygonFantasyKingdom/Textures/Alts/PolygonFantasyKingdom_Texture_04_B.png
+- Assets/TFM/Sprites/UI Sprites/UI casual game/equipment_frame_blue.png
+- Assets/PolygonFantasyKingdom/Textures/Misc/PolygonFantasyKingdom_Texture_Emmisive.png
+- Assets/Other Assets/PolygonNature/Textures/Leaves/Leaves_Willow_MaskTexture.png
+- Assets/TFM/Sprites/UI Sprites/UI casual game/foodIcon.png
+- Assets/Other Assets/PolygonNature/Textures/Leaves/Tree_Dead_Branch_MaskTexture.png
+- Assets/TFM/Sprites/UI Sprites/UI casual game/stage_arrow_prev.png
+- Assets/Other Assets/PolygonNature/Textures/Leaves/Leaves_Pine_Texture.png
+Dependencies: []

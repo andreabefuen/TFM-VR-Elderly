@@ -1,0 +1,47 @@
+ManifestFileVersion: 0
+CRC: 4236639066
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 24bf226b14b2134e4d42f66e0627b8db
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4df8c69f2c8a6ad9e3cbf82bb83e4dc3
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Cartoon_Farm_Crops/Textures/Cartoon_Farm_Crops_Tomato_Fruit_Albedo.png
+- Assets/Other Assets/PolygonNature/Textures/Ground_Textures/Grass.png
+- Assets/TFM/Models/Crops_Models/Potato.png
+- Assets/Epic Toon FX/Textures/circle.png
+- Assets/Epic Toon FX/Textures/cloud_2x2_hard.png
+- Assets/PolygonFantasyKingdom/Textures/Ground/PFK_Texture_Ground_Mud_01.png
+- Assets/Epic Toon FX/Textures/talkbubble.png
+- Assets/Cartoon_Farm_Crops/Textures/Cartoon_Farm_Crops_Eggplant_Fruit_Albedo.png
+- Assets/TFM/Sprites/UI Sprites/Spritesheet/greySheet.png
+- Assets/Other Assets/Suriyun/Cute Pet/Texture/Pig_A.png
+- Assets/Cartoon_Farm_Crops/Textures/Cartoon_Farm_Crops_Eggplant_Plant_Albedo.png
+- Assets/Other Assets/PolygonNature/Textures/Misc/White.png
+- Assets/TFM/Scenes/CaveScene/Lightmap-0_comp_dir.png
+- Assets/Other Assets/PolygonNature/Textures/Ground_Textures/BaseGrass_normals.png
+- Assets/Other Assets/PolygonNature/Textures/Leaves/Tree_Dead_Branch.png
+- Assets/Cartoon_Farm_Crops/Textures/Cartoon_Farm_Crops_Tomato_Plant_Albedo.png
+- Assets/TFM/Sprites/UI Sprites/woodIcon.png
+- Assets/Standard Assets/Effects/ToonShading/Textures/UtilToonGradient.png
+- Assets/Other Assets/PolygonNature/Textures/Misc/ReflectionWater.png
+- Assets/TFM/Sprites/UI Sprites/bubble.png
+- Assets/Other Assets/PolygonNature/Textures/Ground_Textures/Grass_02.png
+- Assets/TFM/Sprites/UI Sprites/PNG/shop_img_gold_1.png
+- Assets/Wood Sign Models/Textures/wood_signs_texture.png
+- Assets/TFM/Sprites/UI Sprites/UI casual game/stage_arrow_next.png
+- Assets/Other Assets/Suriyun/Cute Pet/Texture/Dog_A.png
+- Assets/TFM/Scenes/MainIslandZones/Lightmap-1_comp_dir.png
+- Assets/Other Assets/PolygonNature/Textures/Leaves/Leaves_Generic_Texture.png
+- Assets/PolygonFantasyKingdom/Textures/Ground/PFK_Texture_Ground_Base_Normals.png
+- Assets/TFM/Sprites/UI Sprites/rockIcon.png
+Dependencies: []

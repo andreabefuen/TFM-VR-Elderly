@@ -1,0 +1,19 @@
+ManifestFileVersion: 0
+CRC: 2807303880
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4fabf699989702de67b8456bad2393d9
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b0363f7088f9761414f730641bf9a24b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Font Asset Icon.psd
+- Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Text Component Icon.psd
+- Assets/Models/VR Controllers Models/Vive Controllers/Textures/onepointfive_texture.psd
+Dependencies: []

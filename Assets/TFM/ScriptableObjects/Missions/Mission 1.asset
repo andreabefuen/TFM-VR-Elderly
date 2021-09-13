@@ -16,7 +16,7 @@ MonoBehaviour:
   itemNeeded: {fileID: 11400000, guid: 94466d6ee212a2c41bf4b16bf059895c, type: 2}
   cuantityNeeded: 1
   missionName: Quiero unos tomates
-  description: dsahfhfdhshcva
+  description: 
   moneyReward: 100
   itemReward: {fileID: 11400000, guid: d1571e77d6a55b042a57e822da0a23a4, type: 2}
   isCompleted: 0

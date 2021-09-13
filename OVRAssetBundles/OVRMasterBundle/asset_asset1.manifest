@@ -1,0 +1,80 @@
+ManifestFileVersion: 0
+CRC: 2542711355
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 79f7734d3c066402a8f08d0d631b688d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 207015947ed7502de5bd5c566f962812
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2d70480308501f543a5df74c5773e433, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 14fcd214384d2af4cac694d5430646e1, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d7b1877fbcee4384391bb93c4ef39976, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 98c2b709f86fc0e4aa2140c8c941e25a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 040c649a4e986a64987706ea3ae312de, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 240328cdec5aa4d408bb9541fb310d22, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a88cb60b9f7da404ebce96b57b5b88d0, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 73518621e4c8cc3448e73ce67e38b377, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 136bd69c0edd803458396fd86b2ef7d2, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5b71ad40e238046238f9b0c6f33c3791, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Scripts/Components/Behaviours/Dog/OnAnimalFeededDog.asset
+- Assets/TFM/ScriptableObjects/Tools/SpongeTool.asset
+- Assets/TFM/ScriptableObjects/Items/Tomates.asset
+- Assets/TFM/ScriptableObjects/Items/Hongos.asset
+- Assets/TFM/ScriptableObjects/Animals/PerroSO.asset
+- Assets/TFM/ScriptableObjects/AxeSoundEffect.asset
+- Assets/TFM/ScriptableObjects/PickaxeSoundEffect.asset
+- Assets/TFM/ScriptableObjects/Tools/PickaxeTool.asset
+- Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_WoodBeam_01_Convex.asset
+- Assets/TFM/ScriptableObjects/Items/Wood.asset
+- Assets/TFM/ScriptableObjects/GrowingBehaviour.asset
+- Assets/PolygonFantasyKingdom/Models/Convex/SM_Prop_Pumpkin_Plant_01_Convex.asset
+- Assets/TFM/ScriptableObjects/Missions/Mission 2.asset
+- Assets/TFM/ScriptableObjects/EatingSoundEffect.asset
+- Assets/PolygonFantasyKingdom/Models/Convex/SM_Item_Jar_05_Convex.asset
+- Assets/Scripts/Components/Behaviours/OnAnimalPetted.asset
+- Assets/TFM/ScriptableObjects/Missions/Mission 3.asset
+- Assets/Scripts/Components/Behaviours/Dog/OnAnimalPettedDog.asset
+- Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Floor_Wood_02_Convex.asset
+- Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Roof_Tile_Peak_Cap_01_Convex.asset
+- Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Wall_Cut_02_Convex.asset
+- Assets/PolygonFantasyKingdom/Models/Convex/SM_Prop_Chair_Wood_04_Convex.asset
+- Assets/TFM/ScriptableObjects/Items/Rock.asset
+- Assets/TFM/ScriptableObjects/Animals/DogAnimalBehaviourSystem.asset
+- Assets/TFM/ScriptableObjects/Events/OnSpongeRelease.asset
+- Assets/TFM/ScriptableObjects/OnGrabItem.asset
+- Assets/TFM/ScriptableObjects/Items/Berenjena.asset
+- Assets/TFM/ScriptableObjects/Events/OnSpongeGrab.asset
+- Assets/TFM/ScriptableObjects/Tools/AxeTool.asset
+Dependencies:
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_asset0
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_asset2
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_mp30
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_png1
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_png2
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_prefab2
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_prefab3

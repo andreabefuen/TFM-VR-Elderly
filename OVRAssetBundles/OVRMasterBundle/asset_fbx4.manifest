@@ -1,0 +1,60 @@
+ManifestFileVersion: 0
+CRC: 1312281980
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7162b510b87de09a5cc2dd20f8c670a2
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 317920cb0e26af913dfcf6c0b10ef1c2
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/PolygonFarm/Models/SM_Bld_Farmhouse_02.fbx
+- Assets/PolygonFarm/Models/SM_Generic_Ground_02.fbx
+- Assets/PolygonFarm/Models/SM_Env_Road_Dirt_End_01.fbx
+- Assets/TFM/Animations/People/Idle.fbx
+- Assets/PolygonFarm/Models/SM_Env_Road_Dirt_Swerve_01.fbx
+- Assets/TFM/Animations/People/Standing Greeting.fbx
+- Assets/Other Assets/PolygonNature/Models/SM_Rock_Cluster_Large_03.fbx
+- Assets/TFM/Animations/People/Walk.fbx
+- Assets/PolygonTown/Models/Props/SM_Prop_Church_Stand_01.fbx
+- Assets/PolygonFantasyKingdom/Models/FantasyKingdom_Characters.fbx
+- Assets/PolygonFarm/Models/SM_Generic_Ground_03.fbx
+- Assets/PolygonTown/Models/Buildings/SM_Bld_Church_01.fbx
+- Assets/PolygonFarm/Models/SM_Env_Road_Dirt_Straight_01.fbx
+- Assets/PolygonFarm/Models/SM_Env_Road_Dirt_End_02.fbx
+- Assets/Other Assets/PolygonNature/Models/SM_Rock_Cluster_Large_01.fbx
+- Assets/PolygonFarm/Models/SM_Env_Road_Dirt_Corner_02.fbx
+- Assets/PolygonFarm/Models/SM_Env_Road_Dirt_Swerve_02.fbx
+- Assets/PolygonFarm/Models/SM_Env_Road_Dirt_Intersection_01.fbx
+- Assets/PolygonTown/Models/Props/SM_Prop_Church_Pew_01.fbx
+- Assets/TFM/Animations/People/Praying.fbx
+- Assets/PolygonTown/Models/Characters/Characters.fbx
+- Assets/Other Assets/PolygonNature/Models/SM_Rock_Cluster_Large_02.fbx
+Dependencies:
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_mat0
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_shader0

@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/TFM/Scenes/MainIslandZones.unity
     guid: 34ac2db6cee8587428573a1db3f1c47c
-  - enabled: 1
+  - enabled: 0
     path: Assets/TFM/Scenes/MainScene.unity
     guid: 5968e6919b98e0142bae42a34d4d7517
   - enabled: 1
@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/TFM/Scenes/ForestScene.unity
     guid: 30bfad2086b5782439b221f802881f29
+  - enabled: 1
+    path: Assets/TFM/Scenes/HouseScene.unity
+    guid: 6521d767a563db64188a7f0f6d555d54
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 76007aa7dc2a0f84bb4949211e26a714,
       type: 2}

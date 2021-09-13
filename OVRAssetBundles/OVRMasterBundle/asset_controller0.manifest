@@ -1,0 +1,28 @@
+ManifestFileVersion: 0
+CRC: 899983512
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 00268e04fba21dccbae1954783bc6465
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: fdf6c57a251b9f6ec27bdd2fe01b033c
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/TFM/Animations/Hands/Left Hand Animator.controller
+- Assets/TFM/Animations/People/NPC_AC.controller
+- Assets/TFM/Animations/People/NPC_Praying.controller
+- Assets/TFM/Animations/Hands/Right Hand Animator.controller
+- Assets/Other Assets/Suriyun/Animations_Cute_Animals/TypeA/TypeA.controller
+Dependencies:
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_anim0
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_fbx0
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_fbx1
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_fbx2
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_fbx4

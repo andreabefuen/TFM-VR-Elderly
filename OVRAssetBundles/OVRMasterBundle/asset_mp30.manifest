@@ -1,0 +1,24 @@
+ManifestFileVersion: 0
+CRC: 3581964430
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 62a9cc0ae1715503a80caaf8efb21d18
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/TFM/Audios/PickaxeSound.mp3
+- Assets/TFM/Audios/pig sound effects.mp3
+- Assets/TFM/Audios/037 - 12 PM.mp3
+- Assets/TFM/Audios/Cartoon Mumbling Sound Effects.mp3
+- Assets/TFM/Audios/Axe sound clip.mp3
+- Assets/TFM/Audios/eating sound effect.mp3
+- Assets/TFM/Audios/pup4.mp3
+- Assets/TFM/Audios/Plant Growing Sound Effect.mp3
+Dependencies: []

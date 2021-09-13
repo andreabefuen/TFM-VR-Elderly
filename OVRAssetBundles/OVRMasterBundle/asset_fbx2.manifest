@@ -1,0 +1,64 @@
+ManifestFileVersion: 0
+CRC: 1281402173
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ee5e37537f0415fc7746ecffe7d58ad6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ed6ec045ea44fa41f636aefe48bee713
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Other Assets/Suriyun/Animations_Cute_Animals/TypeA/Animal_TypeA@Idle.fbx
+- Assets/PolygonTown/Models/Environment/SM_Env_Plant_Cabbage_01.fbx
+- Assets/PolygonFantasyKingdom/Models/SM_Item_Jar_05.fbx
+- Assets/PolygonFantasyKingdom/Models/SM_Item_Jar_01.fbx
+- Assets/Other Assets/Suriyun/Animations_Cute_Animals/TypeA/Animal_TypeA@Die.fbx
+- Assets/Other Assets/PolygonNature/Models/SM_Rock_CaveEntrance_01.fbx
+- Assets/PolygonTown/Models/Environment/SM_Env_Plant_Onion_01.fbx
+- Assets/Other Assets/PolygonNature/Models/SM_Tree_Birch_01.fbx
+- Assets/PolygonFantasyKingdom/Models/SM_Prop_Cabinet_Stackable_02.fbx
+- Assets/Other Assets/Suriyun/Animations_Cute_Animals/TypeA/Animal_TypeA@Rest.fbx
+- Assets/PolygonFantasyKingdom/Models/SM_Bld_House_Wall_Window_07.fbx
+- Assets/Other Assets/PolygonNature/Models/SM_Tree_Dead_02.fbx
+- Assets/PolygonFantasyKingdom/Models/SM_Bld_House_Floor_Wood_02.fbx
+- Assets/Other Assets/PolygonNature/Models/SM_Prop_Bridge_Curved_01.fbx
+- Assets/PolygonFantasyKingdom/Models/SM_Prop_Rug_08.fbx
+- Assets/Other Assets/PolygonNature/Models/LODS/SM_Tree_Dead_01_LOD_01.fbx
+- Assets/PolygonFantasyKingdom/Models/SM_Prop_Pumpkin_02.fbx
+- Assets/Other Assets/PolygonNature/Models/SM_Plant_Mushrooms_02.fbx
+- Assets/Other Assets/PolygonNature/Models/SM_Terrain_Rubble_Pebbles_02.fbx
+- Assets/PolygonFantasyKingdom/Models/SM_Bld_House_Wall_02.fbx
+- Assets/PolygonFantasyKingdom/Models/SM_Bld_House_WoodBeam_02.fbx
+- Assets/Other Assets/Suriyun/Animations_Cute_Animals/TypeA/Animal_TypeA@Walk.fbx
+- Assets/Other Assets/PolygonNature/Models/LODS/SM_Tree_Birch_04_LOD_01.fbx
+- Assets/Other Assets/PolygonNature/Models/SM_Tree_Pine_Large_01.fbx
+- Assets/PolygonFantasyKingdom/Models/SM_Bld_House_Roof_Tile_Window_02.fbx
+- Assets/Other Assets/PolygonNature/Models/LODS/SM_Tree_Pine_Small_02_LOD_01.fbx
+- Assets/Other Assets/PolygonNature/Models/SM_Rock_Pile_01.fbx
+- Assets/Other Assets/PolygonNature/Models/SM_Rock_Boulder_01.fbx
+- Assets/Other Assets/PolygonNature/Models/LODS/SM_Tree_Pine_01_LOD_01.fbx
+- Assets/Other Assets/PolygonNature/Models/SM_Prop_Pillar_01.fbx
+Dependencies:
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_mat0
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_mat1

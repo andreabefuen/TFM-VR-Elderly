@@ -1,0 +1,76 @@
+ManifestFileVersion: 0
+CRC: 87313077
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: dd74b678b049785103d148ec8673c402
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 94b9cb68c5e46103c0ced70390ead67d
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2d70480308501f543a5df74c5773e433, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d7b1877fbcee4384391bb93c4ef39976, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fe6a1146a68a87c4588f02fd00d9a649, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5b71ad40e238046238f9b0c6f33c3791, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Roof_Tile_Half_02_Convex.asset
+- Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_WoodBeam_02_Convex.asset
+- Assets/PolygonFantasyKingdom/Models/Convex/SM_Prop_Bed_03_Convex.asset
+- Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Wall_Window_07_Convex.asset
+- Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Wall_WindowBox_03_Convex.asset
+- Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Wall_Door_01_Convex 1.asset
+- Assets/PolygonFantasyKingdom/Models/Convex/SM_Prop_Herb_Bunch_01_Convex.asset
+- Assets/TFM/Fonts/LuckiestGuy-Regular SDF.asset
+- Assets/PolygonFantasyKingdom/Models/Convex/SM_Prop_Table_Wood_06_Convex.asset
+- Assets/PolygonFantasyKingdom/Models/Convex/SM_Item_Jar_01_Convex.asset
+- Assets/PolygonFantasyKingdom/Models/Convex/SM_Prop_Cabinet_Stackable_02_Convex.asset
+- Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Roof_Tile_Edge_End_01_Convex.asset
+- Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Wall_01_Convex.asset
+- Assets/PolygonFantasyKingdom/Models/Convex/SM_Prop_Cabinet_04_Convex.asset
+- Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Roof_Tile_Window_02_Convex.asset
+- Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Wall_02_Convex.asset
+- Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Wall_Window_01_Convex.asset
+- Assets/PolygonFantasyKingdom/Models/Convex/SM_Prop_Pumpkin_02_Convex.asset
+- Assets/TFM/ScriptableObjects/Inventory/DSNSAGJDAA.asset
+- Assets/PolygonFantasyKingdom/Models/Convex/SM_Item_Pickaxe_01_Convex.asset
+- Assets/TFM/ScriptableObjects/GrowingSoundEffect.asset
+- Assets/TFM/ScriptableObjects/Items/Pumpkin.asset
+- Assets/PolygonFantasyKingdom/Models/Convex/SM_Item_Watering_Can_01_Convex.asset
+- Assets/PolygonFantasyKingdom/Models/Convex/SM_Prop_Mirror_03_Convex.asset
+- Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Roof_Tile_Peak_Cap_Edge_01_Convex.asset
+- Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Roof_Tile_Window_03_Convex.asset
+- Assets/PolygonFantasyKingdom/Models/Convex/SM_Item_Jar_03_Convex.asset
+- Assets/PolygonFantasyKingdom/Models/Convex/SM_Prop_Garlic_Rope_01_Convex.asset
+- Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_House_Roof_Tile_End_01_Convex.asset
+Dependencies:
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_mp30
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_png1
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_prefab0
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_shader0
+- C:/UnityProjects/VR-TFM/OVRAssetBundles/OVRMasterBundle/asset_ttf0
