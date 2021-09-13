@@ -71,7 +71,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.41
+  m_Radius: 2.03
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2283520622295403973
 MonoBehaviour:
@@ -304,11 +304,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 452070, guid: cf43a7dd258b42b41a217fc2f452aeda, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.204
+      value: 0.267
       objectReference: {fileID: 0}
     - target: {fileID: 452070, guid: cf43a7dd258b42b41a217fc2f452aeda, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.46
+      value: 1.635
       objectReference: {fileID: 0}
     - target: {fileID: 452070, guid: cf43a7dd258b42b41a217fc2f452aeda, type: 3}
       propertyPath: m_LocalPosition.z
@@ -345,6 +345,14 @@ PrefabInstance:
     - target: {fileID: 19865466, guid: cf43a7dd258b42b41a217fc2f452aeda, type: 3}
       propertyPath: lengthInSec
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19865466, guid: cf43a7dd258b42b41a217fc2f452aeda, type: 3}
+      propertyPath: RotationModule.x.minMaxState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19865466, guid: cf43a7dd258b42b41a217fc2f452aeda, type: 3}
+      propertyPath: RotationModule.y.minMaxState
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf43a7dd258b42b41a217fc2f452aeda, type: 3}
@@ -440,7 +448,7 @@ PrefabInstance:
     - target: {fileID: 8122301298006539160, guid: 087b7048b3e4265478f5a4b9b40470b6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.002000004
+      value: 0.002
       objectReference: {fileID: 0}
     - target: {fileID: 8122301298006539160, guid: 087b7048b3e4265478f5a4b9b40470b6,
         type: 3}
@@ -465,12 +473,12 @@ PrefabInstance:
     - target: {fileID: 8122301298006539160, guid: 087b7048b3e4265478f5a4b9b40470b6,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.392
+      value: 0.529
       objectReference: {fileID: 0}
     - target: {fileID: 8122301298006539160, guid: 087b7048b3e4265478f5a4b9b40470b6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1.404
+      value: 1.644
       objectReference: {fileID: 0}
     - target: {fileID: 8122301298006539160, guid: 087b7048b3e4265478f5a4b9b40470b6,
         type: 3}

@@ -20,91 +20,59 @@ public class DefaultPeopleBehaviourSO : PeopleBehaviourSO
 
     public override IEnumerator MovementCoroutine(MonoBehaviour obj, Transform goal)
     {
-        while(!canMove)  yield return new WaitUntil(() => canMove);
+        yield return new WaitUntil(() => canMove);
 
         var transform = obj.transform;
         //transform.LookAt(goal);
         NavMeshAgent navMesh = obj.GetComponent<NavMeshAgent>();
         navMesh.SetDestination(goal.position);
 
-        if (navMesh.remainingDistance <= 3)
-        {
-            onMoveCharacter?.Raise(animationIdleTrigger);
-            navMesh.isStopped = true;
-            yield return null;
-        }
-        else
-        {
-            navMesh.isStopped = false;
-
-            Debug.Log("hofjdahsgjldsag");
-            onMoveCharacter?.Raise(animationMovementTrigger);
-
-            while (navMesh.remainingDistance > 3)
-            {
-                //transform.LookAt(Vector3.forward *-1);
-                yield return null;
-                onMoveCharacter?.Raise(animationIdleTrigger);
-                navMesh.isStopped = true;
-            }
-
-            //yield return new WaitUntil(() => navMesh.remainingDistance < 1);
-
-        }
+        navMesh.isStopped = false;
+        onMoveCharacter?.Raise(animationMovementTrigger);
+        yield return new WaitUntil(() => navMesh.remainingDistance <= 3);
+        onMoveCharacter?.Raise(animationIdleTrigger);
+        navMesh.isStopped = true;
     }
 
 
 
     public override IEnumerator MovementCoroutine(MonoBehaviour obj, Vector3 goal)
     {
-        while (!canMove) yield return new WaitUntil(() => canMove == true);
-        Debug.Log("SE PUEDE MOVER");
-
-        var transform = obj.transform;
-        //transform.LookAt(goal);
-        NavMeshAgent navMesh = obj.GetComponent<NavMeshAgent>();
-        navMesh.SetDestination(goal);
-        navMesh.isStopped = false;
-        onMoveCharacter?.Raise(animationMovementTrigger);
-
-        Debug.Log("adfhasdjg");
-        while(navMesh.remainingDistance >= 3)
+        Debug.Log("Can move??? " + canMove);
+        if (!canMove)
         {
-            yield return new WaitUntil(() => navMesh.remainingDistance < 3);
+            yield return new WaitUntil(() => canMove == true);
+
         }
-        if(navMesh.remainingDistance< 3)
+        else
         {
-            onMoveCharacter?.Raise(animationIdleTrigger);
+            Debug.Log("SE PUEDE MOVER");
+
+            var transform = obj.transform;
+            //transform.LookAt(goal);
+            NavMeshAgent navMesh = obj.GetComponent<NavMeshAgent>();
+            navMesh.SetDestination(goal);
+            if (navMesh.remainingDistance > 3)
+            {
+                navMesh.isStopped = false;
+                onMoveCharacter?.Raise(animationMovementTrigger);
+            }
+            while (navMesh.remainingDistance > 3)
+            {
+                yield return null;
+            }
+            //yield return new WaitUntil(() => navMesh.remainingDistance <= 3);
+            Debug.Log("idle");
             navMesh.isStopped = true;
+            onMoveCharacter?.Raise(animationIdleTrigger);
+            yield return null;
         }
-        //
-        // if (navMesh.remainingDistance < 2)
-        // {
-        //     onMoveCharacter?.Raise(animationIdleTrigger);
-        //     navMesh.isStopped = true;
-        //     yield return null;
-        // }
-        // else
-        // {
-        //     navMesh.isStopped = false;
-        //
-        //     Debug.Log("Movimiento");
-        //     onMoveCharacter?.Raise(animationMovementTrigger);
-        //
-        //     while (navMesh.remainingDistance >= 2)
-        //     {
-        //         //transform.LookAt(Vector3.forward *-1);
-        //         yield return null;
-        //       
-        //
-        //     }
-        //     onMoveCharacter?.Raise(animationIdleTrigger);
-        //     navMesh.isStopped = true;
-        //
-        //
-        //     //yield return new WaitUntil(() => navMesh.remainingDistance < 1);
-        //
-        // }
+      
+        //navMesh.isStopped = false;
+        //onMoveCharacter?.Raise(animationMovementTrigger);
+        //yield return new WaitUntil(() => navMesh.remainingDistance <= 3);
+        //onMoveCharacter?.Raise(animationIdleTrigger);
+        //navMesh.isStopped = true;
     }
 
     public override IEnumerator TalkCoroutine(MonoBehaviour obj)
@@ -128,7 +96,10 @@ public class DefaultPeopleBehaviourSO : PeopleBehaviourSO
         MissionsInformationBubble aux = obj.GetComponent<MissionsInformationBubble>();
         canMove = false;
         onMoveCharacter?.Raise(animationGreetTrigger);
-        while(!aux.missionSO.IsAccepted) yield return new WaitUntil(() => aux.missionSO.IsAccepted == true);
+        Debug.Log("TRIGGER GREET");
+
+        while (!aux.missionSO.IsAccepted) { yield return null; }
+        //yield return new WaitUntil(() => aux.missionSO.IsAccepted == true);
         canMove = true;
         Debug.Log("mission aaceptada");
        

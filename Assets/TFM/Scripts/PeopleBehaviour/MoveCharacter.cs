@@ -14,18 +14,21 @@ public class MoveCharacter : MonoBehaviour
         peopleBehaviour = GetComponent<PeopleBehaviour>();
         //StartCoroutine(MoveIfHungry());
         moveCoroutine =  StartCoroutine(MoveRandomly());
+        
 
     }
 
     IEnumerator MoveRandomly()
     {
-        while (true)
-        {
+
             Vector3 aux = new Vector3(Random.insideUnitCircle.x * 20, this.gameObject.transform.position.y, Random.insideUnitCircle.y * 20);
             MoveRandomly(aux);
             yield return new WaitForSeconds(10f);
+            StopCoroutine(moveCoroutine);
+            moveCoroutine = StartCoroutine(MoveRandomly());
             
-        }
+            
+        
     }
 
     void MoveRandomly(Vector3 goal)

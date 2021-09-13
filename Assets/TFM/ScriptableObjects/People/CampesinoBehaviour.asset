@@ -16,4 +16,4 @@ MonoBehaviour:
   animationMovementTrigger: Walk
   animationIdleTrigger: Idle
   animationGreetTrigger: Greet
-  onMoveCharacter: {fileID: 11400000, guid: 3aa9c369545ae574685b0c5c712eb9c3, type: 2}
+  onMoveCharacter: {fileID: 11400000, guid: 95b2b69b6c62ec742af4a36fd924f98c, type: 2}
