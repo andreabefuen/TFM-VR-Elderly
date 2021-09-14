@@ -8,6 +8,8 @@ public class WaterPlants : CollisionBehaviour
 {
     public Crops crop;
     public int minutesPassed = 10;
+    [Range(0,59)]
+    public int secondsPassed = 30;
     public GrowingBehaviour[] plantToGrow;
     public int numPlants;
     public PickupItem[] pickableItems;
@@ -107,6 +109,9 @@ public class WaterPlants : CollisionBehaviour
 
     bool GetIfPossibleWatering()
     {
+        minutesPassed += (int) secondsPassed / 60;
         return GameFlowManager.Instance.MinutesIntPassedCrop(crop) >= minutesPassed ? true : false;
+        //return GameFlowManager.Instance.SecondsPassedCrop(crop) >= secondsPassed ? true : false;
+
     }
 }

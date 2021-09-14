@@ -324,7 +324,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &6211691719610227245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -390,7 +390,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   plantGrowing: {fileID: 11400000, guid: 04bb412d0579c4341983b50c50fbaf03, type: 2}
-  stages: 5
+  stages: 2
 --- !u!65 &6211691719893812433
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -399,7 +399,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6211691719893812435}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 3.8689036, y: 0.7191828, z: 2.0785592}
@@ -453,9 +453,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crop: 0
-  minutesPassed: 2
-  plantToGrow:
-  - {fileID: 0}
+  minutesPassed: 1
+  secondsPassed: 2
+  plantToGrow: []
   numPlants: 0
   pickableItems: []
 --- !u!65 &157819486532190765
@@ -466,7 +466,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6211691720312985192}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 3.789712, y: 0.9730458, z: 1.9703343}
@@ -643,6 +643,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6211691719445684940}
     m_Modifications:
+    - target: {fileID: 313643468010707086, guid: ad7d4f75737cfba4388e5d80c0e24731,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 338225097351085594, guid: ad7d4f75737cfba4388e5d80c0e24731,
         type: 3}
       propertyPath: m_RootOrder
@@ -823,6 +828,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6211691719445684940}
     m_Modifications:
+    - target: {fileID: 313643468010707086, guid: ad7d4f75737cfba4388e5d80c0e24731,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 338225097351085594, guid: ad7d4f75737cfba4388e5d80c0e24731,
         type: 3}
       propertyPath: m_RootOrder

@@ -850,7 +850,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crop: 3
-  minutesPassed: 10
+  minutesPassed: 1
+  secondsPassed: 44
   plantToGrow: []
   numPlants: 0
   pickableItems: []

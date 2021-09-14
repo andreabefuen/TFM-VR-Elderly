@@ -51,7 +51,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   plantGrowing: {fileID: 11400000, guid: 04bb412d0579c4341983b50c50fbaf03, type: 2}
-  stages: 3
+  stages: 1
+--- !u!114 &1116056070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412202850497226650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b22cfa99be3afe49bdea8f88123209a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 94466d6ee212a2c41bf4b16bf059895c, type: 2}
+--- !u!114 &1116056071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412202850497226650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00f1931b434d5f047ade049baae0c932, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: ff9551867316062478533dccfd715413, type: 2}
+  unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1466227495087312690
 GameObject:
   m_ObjectHideFlags: 0
@@ -103,7 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   plantGrowing: {fileID: 11400000, guid: 04bb412d0579c4341983b50c50fbaf03, type: 2}
-  stages: 3
+  stages: 1
 --- !u!1 &2328611587400429463
 GameObject:
   m_ObjectHideFlags: 0
@@ -653,7 +694,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &2659627648877717337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -720,7 +761,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crop: 2
-  minutesPassed: 10
+  minutesPassed: 1
+  secondsPassed: 12
   plantToGrow: []
   numPlants: 0
   pickableItems: []
@@ -869,7 +911,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   plantGrowing: {fileID: 11400000, guid: 04bb412d0579c4341983b50c50fbaf03, type: 2}
-  stages: 3
+  stages: 1
 --- !u!1001 &1246875346769750901
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2118,6 +2160,12 @@ PrefabInstance:
 --- !u!4 &411455063275187326 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6585373068867908309, guid: a51062671b0ea0749917ba394a4d1fda,
+    type: 3}
+  m_PrefabInstance: {fileID: 6833713090442698411}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &412202850497226650 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6588284220388178225, guid: a51062671b0ea0749917ba394a4d1fda,
     type: 3}
   m_PrefabInstance: {fileID: 6833713090442698411}
   m_PrefabAsset: {fileID: 0}

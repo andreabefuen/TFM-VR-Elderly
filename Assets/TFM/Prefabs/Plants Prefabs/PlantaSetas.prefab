@@ -30,6 +30,7 @@ MonoBehaviour:
   activationThreshold: 0.1
   leftRayInteractor: {fileID: 0}
   rightRayInteractor: {fileID: 0}
+  canBePicked: 1
 --- !u!65 &452356649435585241
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -60,6 +61,7 @@ MonoBehaviour:
   activationThreshold: 0.1
   leftRayInteractor: {fileID: 0}
   rightRayInteractor: {fileID: 0}
+  canBePicked: 1
 --- !u!65 &452356648221441511
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -90,6 +92,7 @@ MonoBehaviour:
   activationThreshold: 0.1
   leftRayInteractor: {fileID: 0}
   rightRayInteractor: {fileID: 0}
+  canBePicked: 1
 --- !u!65 &452356649939338784
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -120,6 +123,7 @@ MonoBehaviour:
   activationThreshold: 0.1
   leftRayInteractor: {fileID: 0}
   rightRayInteractor: {fileID: 0}
+  canBePicked: 1
 --- !u!65 &452356649429965333
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -128,7 +132,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 451417249853147937}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.5517663, y: 0.47706708, z: 0.6902381}
@@ -150,6 +154,7 @@ MonoBehaviour:
   activationThreshold: 0.1
   leftRayInteractor: {fileID: 0}
   rightRayInteractor: {fileID: 0}
+  canBePicked: 1
 --- !u!65 &452356649292229646
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -180,6 +185,7 @@ MonoBehaviour:
   activationThreshold: 0.1
   leftRayInteractor: {fileID: 0}
   rightRayInteractor: {fileID: 0}
+  canBePicked: 1
 --- !u!65 &452356649114327956
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -210,6 +216,7 @@ MonoBehaviour:
   activationThreshold: 0.1
   leftRayInteractor: {fileID: 0}
   rightRayInteractor: {fileID: 0}
+  canBePicked: 1
 --- !u!1 &6989351410187639431
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,6 +267,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crop: 1
   minutesPassed: 2
+  secondsPassed: 40
   plantToGrow: []
   numPlants: 0
   pickableItems: []
@@ -359,7 +367,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &6989351410554623682
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -66,6 +66,19 @@ public class GameFlowManager : MonoBehaviour
         return differenceTime.Minutes;
     }
 
+    public int SecondsPassedCrop(Crops crop)
+    {
+        if (!PlayerPrefs.HasKey(crop.ToString() + "date")) { SaveCurrentTimeCrop(crop); return 0; }
+
+        var getLastTime = PlayerPrefs.GetString(crop.ToString() + "date");
+        var currentTime = System.DateTime.Now;
+        var lastTime = System.DateTime.Parse(getLastTime);
+
+        var differenceTime = currentTime - lastTime;
+        Debug.Log("Minutes passed: " + differenceTime.Seconds);
+        return differenceTime.Seconds;
+    }
+
 }
 
 public enum Crops

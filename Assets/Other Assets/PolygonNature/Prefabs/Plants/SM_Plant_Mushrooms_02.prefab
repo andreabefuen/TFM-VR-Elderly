@@ -14,6 +14,9 @@ GameObject:
   - component: {fileID: 95824929190153768}
   - component: {fileID: 5127322706045183931}
   - component: {fileID: 2442248859685831880}
+  - component: {fileID: 7130521855933011678}
+  - component: {fileID: 7580726781735451919}
+  - component: {fileID: 3473288045420428132}
   m_Layer: 0
   m_Name: SM_Plant_Mushrooms_02
   m_TagString: Untagged
@@ -133,3 +136,49 @@ MonoBehaviour:
   activationThreshold: 0.1
   leftRayInteractor: {fileID: 0}
   rightRayInteractor: {fileID: 0}
+  canBePicked: 1
+--- !u!54 &7130521855933011678
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1361614101361290}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &7580726781735451919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1361614101361290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b22cfa99be3afe49bdea8f88123209a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 393daad53de357c42babd76807a42914, type: 2}
+--- !u!114 &3473288045420428132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1361614101361290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00f1931b434d5f047ade049baae0c932, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: ff9551867316062478533dccfd715413, type: 2}
+  unityEventResponse:
+    m_PersistentCalls:
+      m_Calls: []
