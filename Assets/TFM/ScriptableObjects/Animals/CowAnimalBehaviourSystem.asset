@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TouchTime: 1
   LoveParticle: {fileID: 0}
-  AnimalSound: {fileID: 11400000, guid: 9d6e73366a752e548b2949f598cb38e9, type: 2}
+  AnimalSound: {fileID: 11400000, guid: f551c78601363034e9e604c4122e318e, type: 2}
   FeedTime: 1
   FeedParticle: {fileID: 0}
   FeedSound: {fileID: 11400000, guid: 722c56f504e22a44ab6146631e8a385b, type: 2}
